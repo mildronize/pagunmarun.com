@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="{{page.lang}}">
+<!--
+
+Page    : index / MobApp
+Version : 1.0
+Author  : Colorlib
+URI     : https://colorlib.com
+
+ -->
+
+<head>
+    <title>PA GUN MA RUN - พากันมารัน</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Mobland - Mobile App Landing Page Template">
+    <meta name="keywords" content="HTML5, bootstrap, mobile, app, landing, ios, android, responsive">
+
+    <!-- Font -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:300,400,500" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="/public/css/themify-icons.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="/public/css/owl.carousel.min.css">
+    <!-- Main css -->
+    <link href="/public/css/MobApp_styles.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+
+    <!-- Nav Menu -->
+
+    <div class="nav-menu fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html"><img src="/public/images/logo.png" class="img-fluid"
+                                alt="logo"></a> <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link active" href="#home">{{ page.str.menu.home }}
+                                        <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="#info">{{ page.str.menu.info }}</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="#gallery">{{ page.str.menu.status }}</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="#contact">{{ page.str.menu.contact }}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/{% if page.lang == 'th' %}en{% endif %}">
+                                        {% if page.lang == 'th' %}EN{% endif %}
+                                        {% if page.lang == 'en' %}TH{% endif %}
+                                    </a>
+                                </li>
+                                <li class="nav-item"><a href="#" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">{{
+                                        page.str.menu.register }}</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="bg-color" id="home">
+        <div class="container mt-5">
+            <h1>{{ page.str.section.hero.header }}</h1>
+            <p class="tagline">{{ page.str.section.hero.raceDate }}</p>
+            <p class="tagline">
+                เดิน - วิ่ง พากันมารันครั้งที่ 1 มาร่วมเสริมสร้างสุขภาพที่ดีกันครับ
+            </p>
+        </div>
+        <div style="object-fit: cover;" class="mt-3"><img src="/public/images/pattern-landing-2.png" alt="phone" height="500"></div>
+    </header>
+
+    <div class="client-logos my-5">
+        <style>
+            #logos li{
+                    display: inline-block;
+                    list-style-type: none;
+                    margin: 0 1rem;
+                }
+            </style>
+        <div class="container text-center">
+
+            <ul id="logos">
+                <li><img height="50px" src="/public/images/sponsors/medtech-logo-th.png" alt="client logos"></li>
+                <li><img height="50px" src="/public/images/sponsors/psuic-logo-en.png" alt="client logos"></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <style>
+        .countdown-number{
+            font-size: 3rem;
+        }
+        #countdown{
+            margin-top: 1rem;
+        }
+        #countdown li{
+            display: inline-block;
+            list-style-type: none;
+            margin: 0 1rem;
+        }
+    </style>
+
+
+    <div class="section">
+        <div class="container text-center">
+            <div class="section-title">
+                <small>4 สิงหาคม 2562</small>
+                <h3>เตรียมตัวกันให้พร้อมในอีก</h3>
+                <ul id="countdown">
+                    <li>
+                        <div class="countdown-number" id="countdown-weeks"></div>{{ page.str.general.weeks }}
+                    </li>
+                    <li>
+                        <div class="countdown-number" id="countdown-days"></div>{{ page.str.general.days }}
+                    </li>
+                    <li>
+                        <div class="countdown-number" id="countdown-hours"></div>{{ page.str.general.hours }}
+                    </li>
+                    <li>
+                        <div class="countdown-number" id="countdown-minutes"></div>{{ page.str.general.minutes }}
+                    </li>
+                    <li>
+                        <div class="countdown-number" id="countdown-seconds"></div>{{ page.str.general.seconds }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section light-bg" id="info">
+
+        <div class="container">
+
+            <div class="section-title">
+                <!-- <small>Pagunmanrun</small> -->
+                <h3>ข้อมูลทั่วไป</h3>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-map-alt gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body"><a href="#map">
+                                        <h5 class="card-title">แผนที่</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-star gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body"><a href="#age-range">
+                                        <h5 class="card-title">กลุ่มอายุ</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-cup gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body"><a href="#reward">
+                                    <h5 class="card-title">รางวัล</h5>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-lock gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body"><a href="#map">
+                                        <h5 class="card-title">กฏและกติกา</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-credit-card gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body"><a href="#cost-n-payment">
+                                        <h5 class="card-title">ราคาและการชำระเงิน</h5>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-calendar gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body"><a href="#map">
+                                        <h5 class="card-title">กำหนดการ</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-star gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body"><a href="#map">
+                                        <h5 class="card-title">เสื้อและเหรียญรางวัล</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+
+    <div class="section" id="map">
+        <div class="container">
+            <div class="section-title">
+                <small>PA GUN MA RUN</small>
+                <h3>แผนที่การแข่งขัน</h3>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="card-deck">
+                        <div class="card pricing">
+                            <div class="card-head">
+                                <!-- <small class="text-primary">ฟันรัน</small> -->
+                                <h4>มินิมาราธอน 10.5 กม.</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="/public/images/minimarathon-map.png" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="card pricing">
+                            <div class="card-head">
+                                <!-- <small class="text-primary">มินิมาราธอน</small> -->
+                                <h4>ฟันรัน 4 กม.</h4>
+                            </div>
+
+                            <div class="card-body">
+                                <img src="/public/images/funrun-map.png" class="img-fluid">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- // end .pricing -->
+
+
+            </div>
+
+        </div>
+        </div>
+        <!-- // end .section -->
+
+
+        <div class="section light-bg" id="age-range">
+            <div class="container">
+                <div class="section-title">
+                    <small>PA GUN MA RUN</small>
+                    <h3>กลุ่มอายุ</h3>
+                </div>
+                <div class="row justify-content-center text-center">
+                    <div class="col-8">
+                        <div class="card-deck">
+                            <div class="card pricing">
+                                <div class="card-head">
+                                    <h4>มินิมาราธอน <div><sub>10.5 กม.</sub></div>
+                                    </h4>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h4>ประเภทชาย</h4>
+                                        <ul class="list-group list-group-flush">
+                                            <div class="list-group-item">อายุไม่เกิน 19 ปี</div>
+                                            <div class="list-group-item">อายุ 20 – 29 ปี</div>
+                                            <div class="list-group-item">อายุ 30 – 39 ปี</div>
+                                            <div class="list-group-item">อายุ 40 – 49 ปี</div>
+                                            <div class="list-group-item">อายุ 50 – 59 ปี</div>
+                                            <div class="list-group-item">อายุ 60 ปีขึ้นไป</div>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h4>ประเภทหญิง</h4>
+                                        <ul class="list-group list-group-flush">
+                                            <div class="list-group-item">อายุไม่เกิน 29 ปี</div>
+                                            <div class="list-group-item">อายุ 30 – 39 ปี</div>
+                                            <div class="list-group-item">อายุ 40 – 49 ปี</div>
+                                            <div class="list-group-item">อายุ 50 ปีขึ้นไป</div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+
+                                </div>
+                            </div>
+                            <div class="card pricing">
+                                <div class="card-head">
+                                    <h4>ฟันรัน <div><sub>4 กม.</sub></div>
+                                    </h4>
+                                </div>
+
+                                <div class="list-group-item">ประเภททั่วไปชาย</div>
+                                <div class="list-group-item">ประเภททั่วไปหญิง</div>
+                                <div class="card-body"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- // end .pricing -->
+
+                </div>
+                <div style="margin: 1rem"></div>
+                <div class="section-title">
+                    <h3>กติกาการวิ่ง</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <ul>
+                            <li>นักวิ่งลุ้นรางวัล กรุณาพกบัตรประชาชนเพื่อแสดงตนในการรับรางวัล</li>
+                            <li>การแบ่งกลุ่มอายุของผู้สมัครเข้าแข่งขัน จะต้องมีอายุตรงตามกลุ่มอายุที่สมัคร โดยนำ พ.ศ.
+                                2562
+                                ลบด้วย พ.ศ. ปีที่เกิด (ตัวอย่าง เกิดปี 2528 ให้นำ 2562 – 2528 = 34 ปี)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- // end .section -->
+        <div class="section" id="reward">
+            <div class="container">
+                <div class="section-title">
+                    <h3>รางวัล</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <ul>
+                            <li>มินิมาราธอน 10.5 กม. อันดับที่ 1 – 3 ของทุกกลุ่มอายุ ทั้งชายและหญิงจะได้รับถ้วยรางวัล</li>
+                            <li>ฟันรัน 4 กม. อันดับที่ 1 – 3 ทั้งชายและหญิงจะได้รับถ้วยรางวัล</li>
+                            <li>รางวัลพิเศษ สำหรับนักวิ่งเข้าเส้นชัย 50 คนแรกของประเภทการวิ่ง มีดังนี้</li>
+                            <ul>
+                                <li>คณะเทคนิคการแพทย์ ตรวจสุขภาพเบื้องต้นฟรี</li>
+                                <li>วิทยาลัยนานาชาติ ถ่ายรูปพร้อมพิมพ์ฟรี</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section light-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h3>เงื่อนไขการสมัคร</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <ul>
+                            <li>ระบบรับสมัครแบ่งออกเป็นแบบบุคคลและแบบกลุ่ม</li>
+                            <li>การสมัครแบบกลุ่ม เพื่ออำนวยความสะดวกในการชำระเงินและรับเบอร์วิ่ง โดยที่สมาชิกในกลุ่มสามารถเลือกระยะวิ่งที่ต่างกันได้</li>
+                            <li>เมื่อสมัครแล้ว ท่านมีเวลาชำระเงินภายใน 72 ชั่วโมง (พิจารณาอีกครั้งหรือเป็น 48 ชม.) หลังส่งใบสมัคร หากชำระไม่ทันจะถือว่าสละสิทธิ์การสมัคร </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="cost-n-payment">
+            <div class="container">
+                <div class="section-title">
+                    <h3>อัตราค่าสมัครแต่ละประเภท</h3>
+                </div>
+                
+                <div class="card-deck text-center">
+                    <div class="card pricing">
+                        <div class="card-head">
+                            <small>ประเภท</small>
+                            <h4>มินิมาราธอน 10.5 กม.</h4>
+                            <span class="price">400<sub>บาท</sub></span>
+                        </div>
+                        <h5>สิ่งที่ได้รับ</h5>
+                        <div class="list-group-item">เหรียญรางวัล</div>
+                        <div class="list-group-item">เสื้อวิ่ง</div>
+                        <div class="list-group-item"><del>ใบเสร็จ*</del></div>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary btn-lg btn-block">สมัคร</a>
+                        </div>
+                    </div>
+                    <div class="card pricing">
+                        <div class="card-head">
+                            <small>ประเภท</small>
+                            <h4>ฟันรัน 4 กม.</h4>
+                            <span class="price">300<sub>บาท</sub></span>
+                        </div>
+                        <h5>สิ่งที่ได้รับ</h5>
+                        <div class="list-group-item">เหรียญรางวัล</div>
+                        <div class="list-group-item">เสื้อวิ่ง</div>
+                        <div class="list-group-item"><del>ใบเสร็จ*</del></div>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary btn-lg btn-block">สมัคร</a>
+                        </div>
+                    </div>
+                    <div class="card pricing">
+                        <div class="card-head">
+                            <small>เลือกลงประเภทใดก็ได้</small>
+                            <h4>วิ่ง VIP</h4>
+                            <span class="price">1,500<sub>บาท</sub></span>
+                        </div>
+                        <h5>สิ่งที่ได้รับ</h5>
+                        <div class="list-group-item">เหรียญรางวัล</div>
+                        <div class="list-group-item">เสื้อวิ่ง</div>
+                        <div class="list-group-item">ใบเสร็จ*</div>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary btn-lg btn-block">สมัคร</a>
+                        </div>
+                    </div>
+                    <div class="card pricing">
+                        <div class="card-head">
+                            <small>ประเภท</small>
+                            <h4>ฟันรัน 4 กม.</h4>
+                            <span class="price">150<sub>บาท</sub></span>
+                        </div>
+                        <h5>สิ่งที่ได้รับ</h5>
+                        <div class="list-group-item">เหรียญรางวัล</div>
+                        <div class="list-group-item"><del>เสื้อวิ่ง</del></div>
+                        <div class="list-group-item"><del>ใบเสร็จ*</del></div>
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary btn-lg btn-block">สมัคร</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div style="margin: 1rem;" class="text-center">
+                        *หมายเหตุ: การวิ่งประเภท VIP ใบเสร็จสามารถนำไปลดหย่อนภาษีได้
+                    </div></div>
+
+            </div>
+            <!-- // end .pricing -->
+            
+        </div>
+
+        <div class="section bg-color" id="contact">
+            <div class="container">
+
+                <div class="section-title">
+                    <h3 class="contact-text-color">ติดต่อเรา</h3>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-6 ">
+                        <div class="contact-list">
+                            <span class="ti-location-pin mr-2"></span><span class="contact-text-color">วิทยาลัยนานาชาติ</span>
+                        </div>
+                        <div class="contact-list">
+                            <span class="ti-email mr-2"></span><a class="contact-text-color" href="mailto:support@pagunmanrun.com">support@pagunmanrun.com</a>
+                        </div>
+                        <div>
+                            <span class="ti-headphone-alt mr-2"></span> <a class="contact-text-color" href="tel:0000000000">0000000000</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- // end .section -->
+
+        <div class="light-bg py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="social-icons">
+                            <a href="#"><span class="ti-facebook"></span></a>
+                            <a href="#"><span class="ti-twitter-alt"></span></a>
+                            <a href="#"><span class="ti-instagram"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- // end .section -->
+        <footer class="my-5 text-center">
+            <!-- Copyright removal is not prohibited! -->
+            <p class="mb-2"><small>COPYRIGHT © 2017. ALL RIGHTS RESERVED. MOBAPP TEMPLATE BY <a href="https://colorlib.com">COLORLIB</a></small></p>
+
+
+
+            <!-- <small>
+            <a href="#" class="m-2">PRESS</a>
+            <a href="#" class="m-2">TERMS</a>
+            <a href="#" class="m-2">PRIVACY</a>
+        </small> -->
+        </footer>
+
+        <!-- jQuery and Bootstrap -->
+        <script src="/public/js/MobApp/jquery-3.2.1.min.js"></script>
+        <script src="/public/js/MobApp/bootstrap.bundle.min.js"></script>
+        <!-- Plugins JS -->
+        <script src="/public/js/MobApp/owl.carousel.min.js"></script>
+        <!-- Custom JS -->
+        <script src="/public/js/MobApp/script.js"></script>
+        <script src="/public/js/jquery.countdown.min.js"></script>
+        <script type="text/javascript">
+            // $("#countdown")
+            //     .countdown("2019/08/4", function (event) {
+
+            //         $(this).text(
+            //             event.strftime('%-w สัปดาห์ %-d วัน %-H ชม. %-M นาที %-S วินาที')
+            //         );
+            //     });
+            $("#countdown")
+                .countdown("2019/08/4", function (event) {
+                    $("#countdown-weeks").text(event.strftime('%-w'))
+                    $("#countdown-days").text(event.strftime('%-d'))
+                    $("#countdown-hours").text(event.strftime('%-H'))
+                    $("#countdown-minutes").text(event.strftime('%-M'))
+                    $("#countdown-seconds").text(event.strftime('%-S'))
+
+                });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="columns">
+      <div class="column is-8-desktop is-offset-2-desktop is-8-tablet is-offset-2-tablet">
+        <div class="columns">
+          <div class="column is-2">
+            <div class="logo is-size-3 has-text-centered-mobile is-size-4-mobile">
+              <a href="/" >mildronize</a>
+              <small></small>
+
+            </div>
+
+          </div>
+          <div class="column has-text-right has-text-centered-mobile">
+              {% assign pages_list = site.pages %}
+              {% for node in pages_list %}
+                {% if node.title != null %}
+                  {% if node.add_menu != null %}
+                    <span class="is-size-5 menu-link{% if page.url == node.url %} active{% endif %}"><a class="button is-white" href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></span>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+              <!-- <span class="menu-link"><a href="/about" >about</a></span>
+              <span class="menu-link"><a href="/project" >project</a></span>
+              <span class="menu-link"><a href="/" >blog</a></span> -->
+              <span class="is-size-5 menu-link{% if page.url contains 'tags' %} active{% endif %}"><a  class="button is-white" href="/tags/">tag</a></span>
+              <span class="is-size-5 menu-link{% if page.url contains 'blog' %} active{% endif %}"><a  class="button is-white" href="/blog/">blog</a></span>
+              <span class="menu-link is-size-6"><a class="button is-white" href="/search/"><i class="fas fa-search 2x"></i></a></span>
+          </div>
+          <!-- <div class="column"><a href="#"><i class="fas fa-search"></i></a></div> -->
+
+        </div>
+        <hr class="hr-header">
+      </div>
+    </div>
+  </div>
+

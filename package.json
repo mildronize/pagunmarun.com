@@ -1,0 +1,62 @@
+{
+  "name": "mildronize.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker-jekyll-build": "cd jekyll && bundle exec jekyll build --watch",
+    "open-preview": "start http://192.168.99.100:3000",
+    "docker-restart": "docker-compose stop jekyll && docker-compose start jekyll",
+    "dev:docker-init": "docker-compose up -d && docker cp package.json jekyll:/src && docker exec -i jekyll yarn && docker cp Gemfile jekyll:/src &&docker exec -i jekyll bundle install && docker cp jekyll:/src/Gemfile.lock .",
+    "dev:docker": "npm run sync-unison && npm run docker-restart && npm run open-preview && concurrently -k -n \"SYNC,DOCKER\" -c \"bgRed.bold,bgCyan.bold\" \"npm run watch:sync\" \"docker exec -i jekyll npm run in-docker-dev\"",
+    "watch:sync": "chokidar -i \"_site/**\" \"**/*\" -c \"npm run sync-unison\"",
+    "sync-unison": "unison . socket://192.168.99.100:5000/ -follow \"Regex .*\" -ignore \"Path node_modules\" -ignore \"Path .git\" -ignore \"Path yarn.lock\" -auto -batch",
+    "in-docker-dev": "concurrently -k -n \"JEKYLL,BROWSER-SYNC\" -c \"bgBlue.bold,bgGreen.bold\" \"npm run docker-jekyll-build\" \"browser-sync start -s jekyll/_site -f jekyll/_site --extensions html\"",
+    "copy-preload-css": "cp _site/public/css/preload_styles.css src/_includes/css",
+    "build": "cross-env JEKYLL_ENV=production bundle exec jekyll build --trace",
+    "watch:build:inc": "bundle exec jekyll build --watch --incremental --trace ",
+    "dev": "concurrently -k -n \"JEKYLL,BROWSER-SYNC\" -c \"bgBlue.bold,bgGreen.bold\" \"npm run watch:build:inc\" \"npm run serve\"",
+    "serve": "live-server _site",
+    "dev:webpack": "webpack --watch --mode development",
+    "build:webpack": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mildronize/mildronize.github.io.git"
+  },
+  "author": "Thada Wangthammang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mildronize/mildronize.github.io/issues"
+  },
+  "homepage": "https://github.com/mildronize/mildronize.github.io#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
+    "bulma": "^0.7.1",
+    "cheerio": "^1.0.0-rc.2",
+    "isomorphic-unfetch": "^2.1.1",
+    "moment": "^2.22.2",
+    "npm": "^6.5.0",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "recursive-readdir": "^2.2.2",
+    "sync": "^0.2.5",
+    "yarn": "^1.12.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "babel-polyfill": "^6.26.0",
+    "browser-sync": "^2.24.6",
+    "chokidar-cli": "^1.2.0",
+    "concurrently": "^3.6.1",
+    "cross-env": "^5.2.0",
+    "jquery": "1.11.3",
+    "vanilla-lazyload": "8.15.0",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}
