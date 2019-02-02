@@ -75,7 +75,30 @@ URI     : https://colorlib.com
 
 
     <header class="bg-color" id="home">
-        <div class="container mt-5">
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="/public/videos/hero-cover.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+                <!-- <div style="padding-top: 50px"> -->
+                <img src="/public/images/logo02.png" height="300px"/>
+                <!-- </div> -->
+                <!-- <h1>{{ page.str.section.hero.header }}</h1> -->
+                <p class="tagline">{{ page.str.section.hero.raceDate }}</p>
+                <p class="tagline">
+                    เดิน - วิ่งพากันมารันเพื่อสุขภาพ ครั้งที่ 1 ประจำปี 2562
+                </p>
+                <p>
+                    MTPSU x PSUIC
+                </p>
+                <!-- <h1 class="display-3">Video Header</h1>
+                <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p> -->
+            </div>
+            </div>
+        </div>
+        <!-- <div class="container mt-5">
             <h1>{{ page.str.section.hero.header }}</h1>
             <p class="tagline">{{ page.str.section.hero.raceDate }}</p>
             <p class="tagline">
@@ -85,7 +108,7 @@ URI     : https://colorlib.com
                 MTPSU x PSUIC
             </p>
         </div>
-        <div style="object-fit: cover;" class="mt-3"><img src="/public/images/pattern-landing-2.png" alt="phone" height="500"></div>
+        <div style="object-fit: cover;" class="mt-3"><img src="/public/images/pattern-landing-2.png" alt="phone" height="500"></div> -->
     </header>
 
     <style>
