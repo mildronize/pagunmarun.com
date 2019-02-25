@@ -41,7 +41,6 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "recursive-readdir": "^2.2.2",
-    "sync": "^0.2.5",
     "yarn": "^1.12.3"
   },
   "devDependencies": {

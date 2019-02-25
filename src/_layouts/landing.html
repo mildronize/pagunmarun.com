@@ -53,7 +53,7 @@ URI     : https://colorlib.com
                                 </li>
                                 <li class="nav-item"> <a class="nav-link" href="#info">{{ page.str.menu.info }}</a>
                                 </li>
-                                <li class="nav-item"> <a class="nav-link" href="#gallery">{{ page.str.menu.status }}</a>
+                                <li class="nav-item"> <a class="nav-link" href="/register/web/index.php?r=site%2Fcheckstatus&language={{ page.lang }}">{{ page.str.menu.status }}</a>
                                 </li>
                                 <li class="nav-item"> <a class="nav-link" href="#contact">{{ page.str.menu.contact }}</a>
                                 </li>
@@ -63,7 +63,7 @@ URI     : https://colorlib.com
                                         {% if page.lang == 'en' %}TH{% endif %}
                                     </a>
                                 </li>
-                                <li class="nav-item"><a href="#" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">{{
+                                <li class="nav-item"><a href="/register/web/index.php?r=site%2Findexregister&language={{ page.lang }}" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">{{
                                         page.str.menu.register }}</a></li>
                             </ul>
                         </div>
@@ -82,19 +82,17 @@ URI     : https://colorlib.com
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
             <div class="w-100 text-white">
-                <!-- <div style="padding-top: 50px"> -->
-                <img src="/public/images/logo02.png" height="300px"/>
-                <!-- </div> -->
-                <!-- <h1>{{ page.str.section.hero.header }}</h1> -->
-                <p class="tagline">{{ page.str.section.hero.raceDate }}</p>
-                <p class="tagline">
-                    เดิน - วิ่งพากันมารันเพื่อสุขภาพ ครั้งที่ 1 ประจำปี 2562
-                </p>
-                <p>
-                    MTPSU x PSUIC
-                </p>
-                <!-- <h1 class="display-3">Video Header</h1>
-                <p class="lead mb-0">With HTML5 Video and Bootstrap 4</p> -->
+                <img class="hero-logo-img" src="/public/images/logo02.png" />
+                <div class="hero-tagline">
+                    <p class="tagline">{{ page.str.section.hero.raceDate }}</p>
+                    <p class="tagline">
+                        เดิน - วิ่งพากันมารันเพื่อสุขภาพ ครั้งที่ 1 ประจำปี 2562
+                    </p>
+                    <p>
+                        MTPSU x PSUIC
+                    </p>
+                </div>
+
             </div>
             </div>
         </div>
