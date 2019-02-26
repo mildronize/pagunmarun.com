@@ -37,7 +37,7 @@ body {
 }
 
 a {
-    color: #043d7c;
+    color: #0e2e47;
 }
 
 a:hover,
@@ -59,13 +59,13 @@ h1 {
 h2 {
     font-size: 45px;
     font-weight: 300;
-    color: #043d7c;
+    color: #0e2e47;
     letter-spacing: -1px;
     margin-bottom: 1rem;
 }
 
 h3 {
-    color: #043d7c;
+    color: #0e2e47;
     font-size: 33px;
     font-weight: 500;
 }
@@ -73,20 +73,20 @@ h3 {
 h4 {
     font-size: 26px;
     font-weight: 500;
-    color: #043d7c;
+    color: #0e2e47;
 }
 
 h5 {
     font-size: 22px;
     font-weight: 500;
-    color: #043d7c;
+    color: #0e2e47;
     margin-bottom: 0.7rem;
 }
 
 h6 {
     font-size: 18px;
     font-weight: 300;
-    color: #043d7c;
+    color: #0e2e47;
     margin-bottom: 0.7rem;
 }
 
@@ -96,12 +96,12 @@ p {
 }
 
 p.lead {
-    color: #043d7c;
+    color: #0e2e47;
     margin-bottom: 2rem;
 }
 
 .text-primary {
-    color: #043d7c !important;
+    color: #0e2e47 !important;
 }
 
 .light-font {
@@ -117,15 +117,15 @@ p.lead {
 }
 
 .btn-outline-light:hover {
-    color: #043d7c;
+    color: #0e2e47;
 }
 
 .btn-primary {
     border-radius: 3px;
-    background-image: -moz-linear-gradient( 122deg, #043d7c 0%, #002171 100%);
-    background-image: -webkit-linear-gradient( 122deg, #043d7c 0%, #002171 100%);
-    background-image: -ms-linear-gradient( 122deg, #043d7c 0%, #002171 100%);
-    background-image: linear-gradient( 122deg, #043d7c 0%, #002171 100%);
+    background-image: -moz-linear-gradient( 122deg, #0e2e47 0%, #002171 100%);
+    background-image: -webkit-linear-gradient( 122deg, #0e2e47 0%, #002171 100%);
+    background-image: -ms-linear-gradient( 122deg, #0e2e47 0%, #002171 100%);
+    background-image: linear-gradient( 122deg, #0e2e47 0%, #002171 100%);
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.2);
     font-weight: 500;
     padding: 0.6rem 2rem;
@@ -138,7 +138,7 @@ p.lead {
 .btn-primary:not([disabled]):not(.disabled).active,
 .btn-primary:not([disabled]):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
-    background-image: linear-gradient( 122deg, #043d7c 0%, #043d7c 100%);
+    background-image: linear-gradient( 122deg, #0e2e47 0%, #0e2e47 100%);
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.3);
     color: #FFF;
 }
@@ -149,7 +149,7 @@ p.lead {
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.26);
     font-size: 14px;
     font-weight: 500;
-    color: #043d7c;
+    color: #0e2e47;
     margin: 0.5rem;
     padding: 0.7rem 1.6rem;
     line-height: 1.8;
@@ -166,7 +166,7 @@ p.lead {
 }
 
 .section {
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .section-title {
@@ -310,6 +310,14 @@ a.info-button:hover{
     padding: 0;
 }
 
+.navbar-brand-img {
+    display: none;
+}
+
+.navbar-brand-img.is-scrolling {
+    display: inline;
+}
+
 .navbar-nav .nav-link {
     position: relative;
 }
@@ -347,6 +355,18 @@ a.info-button:hover{
 .lang-icon{
     /* padding-top: 10px; */
     margin-top: 8px;
+}
+@media (max-width:992px) {
+    .lang-icon{
+        height: 30px;
+        margin-bottom: 0.5em;
+    }
+    .navbar-dark .navbar-nav .nav-link, .navbar-nav .nav-item {
+        font-size: 1.1em;
+    }
+    .navbar-nav{
+        margin-top: 1em;
+    }
 }
 
 /* HERO
@@ -446,15 +466,15 @@ header {
 }
 
 .hero-medal-img {
-    display: inline;
+    display: none;
     position: absolute;
     top: -750px;
     left: -10%;
 }
 
-@media (max-width:1200px) {
+@media (min-width:1200px) {
     .hero-medal-img {
-        display: none;
+        display: inline;
     }
 }
 
@@ -675,7 +695,7 @@ ul.countdown {
     background: #FFF;
     border-top-width: 3px;
     border-color: #002171 #faf6fb #FFF;
-    color: #043d7c;
+    color: #0e2e47;
 }
 
 /*  IMAGE GALLERY
@@ -713,7 +733,7 @@ ul.countdown {
     border-top-width: 3px;
     border-color: #002171 #faf6fb #FFF;
     box-shadow: 0px 12px 59px 0px rgba(36, 7, 31, 0.11);
-    color: #043d7c;
+    color: #0e2e47;
 }
 
 .card.pricing .card-head {
@@ -725,7 +745,7 @@ ul.countdown {
     display: block;
     font-size: 45px;
     font-weight: 300;
-    color: #043d7c;
+    color: #0e2e47;
 }
 
 .card.pricing .card-head .price sub {
@@ -822,7 +842,7 @@ ul.countdown {
 .contact-list {
     margin-bottom: 1rem;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 .contact-text-color{

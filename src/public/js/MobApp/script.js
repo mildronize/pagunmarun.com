@@ -17,10 +17,13 @@ $(function() {
      *-----------------------------------*/
     function menuscroll() {
         var $navmenu = $('.nav-menu');
+        var $navmenu_logo = $('.navbar-brand-img');
         if ($(window).scrollTop() > 50) {
             $navmenu.addClass('is-scrolling');
+            $navmenu_logo.addClass('is-scrolling')
         } else {
             $navmenu.removeClass("is-scrolling");
+            $navmenu_logo.removeClass('is-scrolling')
         }
     }
     menuscroll();
