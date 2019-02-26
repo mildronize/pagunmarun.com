@@ -297,7 +297,7 @@ a.info-button:hover{
 
 .nav-menu.is-scrolling,
 .nav-menu.menu-is-open {
-    background-color: #002171;
+    background-color: #333;
     /* background: -moz-linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
     background: -webkit-linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%);
     background: linear-gradient(135deg, rgb(74, 13, 143) 0%, rgb(250, 42, 143) 100%); */
