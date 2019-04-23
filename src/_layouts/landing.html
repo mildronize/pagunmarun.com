@@ -101,7 +101,17 @@ URI     : https://colorlib.com
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white">
-                    <img class="hero-logo-img" src="/public/images/logo02.png" />
+                    <!-- <img class="hero-logo-img" src="/public/images/logo02.png" /> -->
+                    <div class="d-flex justify-content-center">
+                            <div class="text-center cycle-slideshow" 
+                            data-cycle-fx=flipHorz
+                            data-cycle-timeout=2000
+                            >
+                            <img class="hero-logo-img" src="/public/images/logo02.png">
+                            <img class="hero-logo-img" src="/public/images/front-shirt.png">
+                            <img class="hero-logo-img" src="/public/images/back-shirt.png">
+                        </div>
+                    </div>
                     <div class="hero-medal-img">
                         <img src="/public/images/big-medal.png" />
                     </div>
@@ -166,8 +176,8 @@ URI     : https://colorlib.com
                     <div class="section-title">
                         <!-- <small>Pagunmanrun</small> -->
                         <h3>ข้อมูลทั่วไป</h3>
-                        <h3>พา กัน มา รัน</h3>
-                        <h5>วิ่งแล้วดี จึงบอกต่อ</h5>
+                        <h3>พากันมารัน</h3>
+                        <h6 class="mb-3 text-body">วิ่งแล้วดี จึงบอกต่อ</h6>
                         <div class="row justify-content-center">
                             <div class="col-10">
                                 กองทุนคณะเทคนิคการแพทย์ ร่วมกับ กองทุนวิทยาลัยนานาชาติ มหาวิทยาลัยสงขลานครินทร์
@@ -191,10 +201,10 @@ URI     : https://colorlib.com
                             <div class="info-item-icon"><i class="fas fa-trophy"></i></div>
                             <div class="info-item-name">รางวัล</div>
                         </a>
-                        <a href="#" class="btn info-button info-item justify-content-center">
+                        <!-- <a href="#" class="btn info-button info-item justify-content-center">
                             <div class="info-item-icon"><i class="fas fa-exclamation-triangle"></i></div>
                             <div class="info-item-name">กฏและกติกา</div>
-                        </a>
+                        </a> -->
                         <a href="#cost-n-payment" class="btn info-button info-item justify-content-center">
                             <div class="info-item-icon"><i class="fas fa-money-bill-alt"></i></div>
                             <div class="info-item-name">ราคาและ<br />การชำระเงิน</div>
@@ -223,18 +233,17 @@ URI     : https://colorlib.com
                         <div class="card-deck">
                             <div class="card pricing">
                                 <div class="card-head">
-                                    <!-- <small class="text-primary">ฟันรัน</small> -->
-                                    <h4>มินิมาราธอน 10.5 กม.</h4>
+                                    <h4>ซุปเปอร์ซุปเปอร์มินิมาราธอน 15 กม.</h4>
                                 </div>
                                 <div class="card-body">
                                     <a data-fancybox="gallery" href="/public/images/minimarathon-map.jpg">
                                         <img src="/public/images/minimarathon-map.jpg" class="img-fluid">
                                     </a>
+                                    *หมายเหตุ: เส้นทางจะมีการเปลี่ยนแปลงในอนาคต
                                 </div>
                             </div>
                             <div class="card pricing">
                                 <div class="card-head">
-                                    <!-- <small class="text-primary">มินิมาราธอน</small> -->
                                     <h4>ฟันรัน 4 กม.</h4>
                                 </div>
 
@@ -264,21 +273,23 @@ URI     : https://colorlib.com
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="card-deck">
+                    <div class="col-6">
                             <div class="card pricing">
-                                <div class="card-head">
-                                    <!-- <small class="text-primary">ฟันรัน</small> -->
-                                    <!-- <h4>มินิมาราธอน 10.5 กม.</h4> -->
+                                <div class="card-body">
+                                    <a data-fancybox="gallery" href="/public/images/new-shirt.png">
+                                        <img src="/public/images/new-shirt.png" class="img-fluid">
+                                    </a>
                                 </div>
+                            </div>
+                    </div>
+                    <div class="col-6">
+                            <div class="card pricing">
                                 <div class="card-body">
                                     <a data-fancybox="gallery" href="/public/images/medal.png">
                                         <img src="/public/images/medal.png" class="img-fluid">
                                     </a>
                                 </div>
                             </div>
-
-                        </div>
                     </div>
                     <!-- // end .pricing -->
 
@@ -299,7 +310,8 @@ URI     : https://colorlib.com
                         <div class="card-deck">
                             <div class="card pricing">
                                 <div class="card-head">
-                                    <h4>มินิมาราธอน <div><sub>10.5 กม.</sub></div>
+                                    <img src="/public/images/undraw_finish_line.png" height="150">
+                                    <h4>ซุปเปอร์มินิมาราธอน <div><sub>15 กม.</sub></div>
                                     </h4>
                                 </div>
 
@@ -331,13 +343,31 @@ URI     : https://colorlib.com
                             </div>
                             <div class="card pricing">
                                 <div class="card-head">
+                                    <img src="/public/images/undraw_Jogging.png" height="150">
                                     <h4>ฟันรัน <div><sub>4 กม.</sub></div>
                                     </h4>
                                 </div>
 
-                                <div class="list-group-item">ประเภททั่วไปชาย</div>
-                                <div class="list-group-item">ประเภททั่วไปหญิง</div>
-                                <div class="list-group-item">ประเภท PA-GUN-MA-RUN <br>(แบบกลุ่ม ๆ ละไม่เกิน 5 คน) </div>
+                                
+                                <div class="row">
+                                        <div class="col-sm">
+                                            <h4>ประเภทชาย</h4>
+                                            <ul class="list-group list-group-flush">
+                                                <div class="list-group-item">อายุไม่เกิน 29 ปี</div>
+                                                <div class="list-group-item">อายุ 30 – 39 ปี</div>
+                                                <div class="list-group-item">อายุ 40 ปีขึ้นไป</div>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm">
+                                            <h4>ประเภทหญิง</h4>
+                                            <ul class="list-group list-group-flush">
+                                                <div class="list-group-item">อายุไม่เกิน 29 ปี</div>
+                                                <div class="list-group-item">อายุ 30 – 39 ปี</div>
+                                                <div class="list-group-item">อายุ 40 ปีขึ้นไป</div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                <div class="mt-3 text-body">ประเภท PA-GUN-MA-RUN <br>(แบบกลุ่ม ๆ ละไม่เกิน 5 คน) </div>
 
                                 <div class="card-body"></div>
                             </div>
@@ -372,21 +402,54 @@ URI     : https://colorlib.com
             <div class="container">
                 <div class="section-title">
                     <h3>รางวัล</h3>
+                    
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 col-12">
-
+                    <div class="col-lg-10 col-12">
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <div class="reward-item">
+                                
+                                <img src="/public/images/supermini-winner.png" height="120">
+                                <h5 class="reward-head">ซุปเปอร์มินิมาราธอน 15 กม.</h5>
+                                <div>อันดับที่ 1 – 3  <br/>ได้รับถ้วยรางวัลของทุกกลุ่มอายุ <br/>ทั้งชายและหญิง</div>
+                            </div>
+                        
+                            <div class="reward-item">
+                                
+                                <img src="/public/images/funrun-winner.png" height="120">
+                                <h5 class="reward-head">ฟันรัน 4 กม. </h5>
+                                <div>อันดับที่ 1 – 3  <br/>ได้รับถ้วยรางวัลของทุกกลุ่มอายุ <br/>ทั้งชายและหญิง</div>
+                            </div>
+                            <div class="reward-item" >
+                                    
+                                <img src="/public/images/group-run.png" height="120">
+                                <h5 class="reward-head">พากันมารัน (กลุ่ม)</h5>
+                                <div>อันดับที่ 1 – 3  <br/>ได้รับของสมนาคุณ</div>
+                            </div>
+                        </div>
+<!-- 
                         <ul>
-                            <li>มินิมาราธอน 10.5 กม. อันดับที่ 1 – 3 ของทุกกลุ่มอายุ ทั้งชายและหญิงจะได้รับถ้วยรางวัล
+                            <li>ซุปเปอร์มินิมาราธอน 15 กม. อันดับที่ 1 – 3 ของทุกกลุ่มอายุ ทั้งชายและหญิงจะได้รับถ้วยรางวัล
                             </li>
                             <li>ฟันรัน 4 กม. อันดับที่ 1 – 3 ประเภทชายและหญิงจะได้รับถ้วยรางวัล</li>
-                            <li>รางวัลพิเศษสำหรับนักวิ่ง ได้แก่ ตรวจสุขภาพเบื้องต้นฟรี, ถ่ายรูปพร้อมพิมพ์ฟรี</li>
-                        </ul>
-                        <h3>กติกา มีดังนี้</h3>
+                        </ul> -->
+                        <h5 class="text-center mt-5">รางวัลพิเศษ</h5>
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <div class="text-center">
+                                <img src="/public/images/medicine.png" height="150">
+                                <div>ตรวจสุขภาพเบื้องต้นฟรี</div>
+                            </div>
+                        
+                            <div class="text-center">
+                                <img src="/public/images/photo.png" height="150">
+                                <div>ถ่ายรูปพร้อมพิมพ์ฟรี</div>
+                            </div>
+                        </div>
+                        <h5 class="text-center mt-4">กติกาของรางวัลพิเศษ มีดังนี้</h5>
                         <ol>
-                            <li>นักวิ่งเข้าเส้นชัย 30 คนแรกของการวิ่งประเภทมินิมาราธอน และวิ่งฟันรัน (ไม่แบ่งกลุ่มอายุ)
+                            <li>นักวิ่งเข้าเส้นชัย 30 คนแรกของการวิ่งประเภทซุปเปอร์มินิมาราธอน และวิ่งฟันรัน (ไม่แบ่งกลุ่มอายุ)
                             </li>
-                            <li>วิ่งฟันรันประเภท PA-GUN-MA-RUN (กลุ่ม) เข้าเส้นชัยพร้อมกัน 10 กลุ่มแรก (ไม่รวม 30
+                            <li>รางวัลพิเศษสำหรับคนที่วิ่งประเภท PA-GUN-MA-RUN (กลุ่ม) เข้าเส้นชัยพร้อมกัน 10 กลุ่มแรก (ไม่รวม 30
                                 คนแรกของการสมัครแบบเดี่ยว)</li>
                         </ol>
                     </div>
@@ -394,43 +457,21 @@ URI     : https://colorlib.com
             </div>
         </div>
 
-        <div class="section light-bg">
-            <div class="container">
-                <div class="section-title">
-                    <h3>เงื่อนไขการสมัคร</h3>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-12">
-                        <ol>
-                            <li>ระบบรับสมัครแบ่งออกเป็นแบบบุคคลและแบบ PA-GUN-MA-RUN (แบบกลุ่ม ๆ ละไม่เกิน 5 คน)</li>
-                            <li>เมื่อสมัครแล้วหลังส่งใบสมัครต้องชำระเงินภายใน 48 ชั่วโมง หากชำระไม่ทันจะถือว่าสละสิทธิ์
-                            </li>
-                            <li>นักวิ่งประเภท PA-GUN-MA-RUN 100 กลุ่มแรกจะได้รับส่วนลดค่าสมัคร 10%</li>
-                            <li>เมื่อชำระเงินแล้วให้ส่งหลักฐานการโอนเงินผ่านทาง 
-                                <ul>
-                                    <li>line@: PAGUNMARUN </li>
-                                    <li>email:
-                                            <i class="fas fa-envelope-square"></i>&nbsp;<a 
-                                            href="mailto:pagunmarun@gmail.com">pagunmarun@gmail.com</a></li>
-                                </ul>
-                                รอการตรวจสอบไม่เกิน 3 วันทำการ</li>
-                        </ol>
-                    </div>
-                </div>
-            </div>
-        </div>
+      
 
-        <div class="section" id="cost-n-payment">
+        <div class="section light-bg" id="cost-n-payment">
             <div class="container">
                 <div class="section-title">
                     <h3>อัตราค่าสมัครแต่ละประเภท</h3>
+                    <h5 class="text-muted">ในช่วงโปรโมชั่น ระหว่างวันที่ 1 พ.ค. – 15 มิ.ย. 2562</h5>
                 </div>
 
                 <div class="d-flex flex-wrap justify-content-center text-center">
                     <div class="type-item">
                         <div class="card-head">
+                            <div><img src="/public/images/undraw_finish_line.png" height="120"/></div>
                             <small>ประเภท</small>
-                            <h4>มินิมาราธอน<br> 10.5 กม.</h4>
+                            <h4>ซุปเปอร์มินิมาราธอน<br> 15 กม.</h4>
                             <span class="price">400<sub>บาท</sub></span>
                         </div>
                         <h5>สิ่งที่ได้รับ</h5>
@@ -441,8 +482,9 @@ URI     : https://colorlib.com
                     </div>
                     <div class="type-item">
                         <div class="card-head">
+                            <div><img src="/public/images/undraw_Jogging.png" height="120"/></div>
                             <small>ประเภท</small>
-                            <h4>ฟันรัน 4 กม.<br>&nbsp;</h4>
+                            <h4>ฟันรัน 4 กม.<br>&nbsp;<br>&nbsp;</h4>
                             <span class="price">300<sub>บาท</sub></span>
                         </div>
                         <h5>สิ่งที่ได้รับ</h5>
@@ -453,8 +495,9 @@ URI     : https://colorlib.com
                     </div>
                     <div class="type-item">
                         <div class="card-head">
+                            <div><img src="/public/images/undraw_superhero.png" height="120"/></div>
                             <small>ประเภท</small>
-                            <h4>วิ่ง VIP<br>&nbsp;</h4>
+                            <h4>วิ่ง VIP<br>&nbsp;<br>&nbsp;</h4>
                             <span class="price">1,500<sub>บาท</sub></span>
                         </div>
                         <h5>สิ่งที่ได้รับ</h5>
@@ -465,8 +508,9 @@ URI     : https://colorlib.com
                     </div>
                     <div class="type-item">
                         <div class="card-head">
+                                <div><img src="/public/images/undraw_book_lover.png" height="120"/></div>
                             <small>ประเภท</small>
-                            <h4>ฟันรัน 4 กม. <br/><small>(นร. และ นศ.)</small></h4>
+                            <h4>ฟันรัน 4 กม. <br/><small>(นร. และ นศ.)</small><br>&nbsp;</h4>
                             <span class="price">150<sub>บาท</sub></span>
                         </div>
                         <h5>สิ่งที่ได้รับ</h5>
@@ -481,10 +525,10 @@ URI     : https://colorlib.com
                         หมายเหตุ:
                         <ol>
                             <li>
-                                ผู้สมัครวิ่งประเภท VIP ใบเสร็จสามารถนำไปลดหย่อนภาษีได้
+                                ผู้สมัครวิ่งประเภท VIP ใบเสร็จสามารถนำไปลดหย่อนภาษีได้ นักวิ่ง และสามารถเลือกสมัครวิ่งในระยะใดก็ได้จะได้รับเสื้อวิ่ง และเหรียญที่ระลึก
                             </li>
                             <li>
-                                นักวิ่งฟันรันประเภท PA-GUN-MA-RUN 100 กลุ่มแรกได้รับส่วนลดค่าสมัคร 10%
+                                นักวิ่งฟันรันประเภท PA-GUN-MA-RUN 100 กลุ่มแรกได้รับส่วนลดค่าสมัคร 15%
                             </li>
                             <li>
                                 ใบเสร็จรับเงินของนักวิ่งประเภท VIP รับพร้อมเสื้อวิ่ง
@@ -493,10 +537,56 @@ URI     : https://colorlib.com
                     </div>
                 </div>
 
+                <div class="section light-bg">
+                        <div class="container">
+                            <div class="section-title">
+                                <h3>เงื่อนไขการสมัคร</h3>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 col-12">
+                                    <ol>
+                                        <li>ระบบรับสมัครแบ่งออกเป็นแบบบุคคลและแบบ PA-GUN-MA-RUN (แบบกลุ่ม ๆ ละไม่เกิน 5 คน)</li>
+                                        <li>เมื่อสมัครแล้วหลังส่งใบสมัครต้องชำระเงินภายใน 48 ชั่วโมง หากชำระไม่ทันจะถือว่าสละสิทธิ์
+                                        </li>
+                                        <li>นักวิ่งประเภท PA-GUN-MA-RUN 100 กลุ่มแรกจะได้รับส่วนลดค่าสมัคร 10%</li>
+                                        <li>เมื่อชำระเงินแล้วให้ส่งหลักฐานการโอนเงินผ่านทาง 
+                                            <ul>
+                                                <li>line@: PAGUNMARUN </li>
+                                                <li>email:
+                                                        <i class="fas fa-envelope-square"></i>&nbsp;<a 
+                                                        href="mailto:pagunmarun@gmail.com">pagunmarun@gmail.com</a></li>
+                                            </ul>
+                                            รอการตรวจสอบไม่เกิน 3 วันทำการ</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 <div class="section-title">
                     <h3>ช่องทางการชำระเงิน</h3>
                 </div>
                 <div class="row justify-content-center">
+                    <div class="col-sm-4">
+                        <img class="img-fluid" src="/public/images/payment.png"/>
+                    </div>
+                    <div class="col-sm-8">
+                            <ol>
+                                    <li>ชำระด้วยเงินสด ณ สำนักงานคณะเทคนิคการแพทย์ มหาวิทยาลัยสงขลานครินทร์</li>
+                                    <li>โอนเข้าบัญชี โครงการ PA-GUN-MA-RUN (พา-กัน-มา-รัน) ครั้งที่ 1 ธนาคารไทยพาณิชย์ เลขที่
+                                        565-499915-6</li>
+                                </ol>
+                                <div class="section-title">
+                                        <h5>หมายเหตุ</h5>
+                                    </div>
+                                    <ol>
+                                            <li>สามารถชำระเงินหลังการสมัครภายใน 48 ชั่วโมง
+                                                หากไม่ชำระเงินภายในเวลาที่กำหนดระบบจะยกเลิกการสมัครโดยอัตโนมัติ</li>
+                                            <li>นักวิ่งทุกประเภทเข้าเส้นชัยก่อน 08.00 น.จะได้รับเหรียญที่ระลึก</li>
+                                        </ol>
+                    </div>
+                </div>
+                <!-- <div class="row justify-content-center">
                     <div class="col-lg-8 col-12">
                         <ol>
                             <li>ชำระด้วยเงินสด ณ สำนักงานคณะเทคนิคการแพทย์ มหาวิทยาลัยสงขลานครินทร์</li>
@@ -506,7 +596,7 @@ URI     : https://colorlib.com
                     </div>
                 </div>
                 <div class="section-title">
-                    <h6>หมายเหตุ</h6>
+                    <h5>หมายเหตุ</h5>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-12">
@@ -514,11 +604,9 @@ URI     : https://colorlib.com
                             <li>สามารถชำระเงินหลังการสมัครภายใน 48 ชั่วโมง
                                 หากไม่ชำระเงินภายในเวลาที่กำหนดระบบจะยกเลิกการสมัครโดยอัตโนมัติ</li>
                             <li>นักวิ่งทุกประเภทเข้าเส้นชัยก่อน 08.00 น.จะได้รับเหรียญที่ระลึก</li>
-                            <li>นักวิ่ง VIP สามารถเลือกสมัครวิ่งในระยะใดก็ได้จะได้รับเสื้อวิ่ง
-                                และเหรียญที่ระลึกในระยะที่เลือก</li>
                         </ol>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!-- // end .pricing -->
 
@@ -544,9 +632,12 @@ URI     : https://colorlib.com
                                 PAGUNMARUN</a>
                         </div>
                         <div class="contact-list">
-                            <i class="fas fa-phone"></i>&nbsp;<a class="contact-text-color"
-                                href="tel:0000000000">074-289119, 074-289129</a>
-                            
+                            <div>
+                                <i class="fas fa-phone"></i>&nbsp;<a class="contact-text-color"
+                                href="tel:074289119">074-289119</a>
+                            </div>
+                                <i class="fas fa-phone"></i>&nbsp;<a class="contact-text-color"
+                                href="tel:074289129">074-289129</a>
                         </div>
                     </div>
                 </div>
@@ -574,6 +665,13 @@ URI     : https://colorlib.com
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <!-- Cycle2 -->
+    
+    <!-- include Cycle2 -->
+    <script src="/public/js/jquery.cycle2.min.js"></script>
+
+    <!-- include one or more optional Cycle2 plugins -->
+    <script src="/public/js/jquery.cycle2.flip.min.js"></script>
 
     <script type="text/javascript">
 

@@ -469,11 +469,17 @@ header {
     padding-bottom: 33%;
     overflow: hidden;
 }
-  
+
+/*  logo animation */
+
 .hero-logo-img{
-    height: 45vh;   
-    /* max-width: 50vh */
+    height: 45vh;
 }
+/* .hero-logo-img{
+    background-image: url('/public/images/logo02.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
 
 .hero-medal-img {
     display: none;
@@ -518,6 +524,20 @@ header {
         font-size: 1.1em;
     }
 }
+
+
+/* REWARD */
+.reward-item{
+    text-align: center;
+    width: 250px;
+    margin-bottom: 2rem;
+}
+.reward-head{
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
 
 /* COUNTDOWN
 ----------------------*/
@@ -851,7 +871,7 @@ ul.countdown {
 /*  CONTACT US
 ----------------------*/
 .contact-list {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: #fff;
     font-size: 1.25em;
 }
