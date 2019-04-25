@@ -202,14 +202,19 @@ URI     : https://colorlib.com
                             <div class="info-item-icon"><i class="fas fa-exclamation-triangle"></i></div>
                             <div class="info-item-name">กฏและกติกา</div>
                         </a> -->
-                        <a href="#cost-n-payment" class="btn info-button info-item justify-content-center">
-                            <div class="info-item-icon"><i class="fas fa-money-bill-alt"></i></div>
-                            <div class="info-item-name">{{ page.str.info.buttonPrice }}</div>
-                        </a>
                         <a href="#medal" class="btn info-button info-item justify-content-center">
                             <div class="info-item-icon"><i class="fas fa-medal"></i></div>
                             <div class="info-item-name">{{ page.str.info.buttonMedal }}</div>
                         </a>
+                        <a href="#cost-n-payment" class="btn info-button info-item justify-content-center">
+                            <div class="info-item-icon"><i class="fas fa-money-bill-alt"></i></div>
+                            <div class="info-item-name">{{ page.str.info.buttonPrice }}</div>
+                        </a>
+                        <a href="#confirm-payment" class="btn info-button info-item justify-content-center">
+                            <div class="info-item-icon"><i class="fas fa-receipt"></i></div>
+                            <div class="info-item-name">{{ page.str.info.buttonPayment }}</div>
+                        </a>
+                        
 
                     </div>
 
@@ -344,7 +349,7 @@ URI     : https://colorlib.com
                                 
                                 <div class="row">
                                         <div class="col-sm">
-                                            <h4>ประเภทชาย</h4>
+                                            <h4>{{ page.str.ageRange.categoryMale }}</h4>
                                             <ul class="list-group list-group-flush">
                                                 {% for item in page.str.ageRange.funRun.male %}
                                                     <div class="list-group-item">{{ item }}</div>
@@ -352,7 +357,7 @@ URI     : https://colorlib.com
                                             </ul>
                                         </div>
                                         <div class="col-sm">
-                                            <h4>ประเภทหญิง</h4>
+                                            <h4>{{ page.str.ageRange.categoryFemale }}</h4>
                                             <ul class="list-group list-group-flush">
                                                 {% for item in page.str.ageRange.funRun.female %}
                                                     <div class="list-group-item">{{ item }}</div>
@@ -398,14 +403,14 @@ URI     : https://colorlib.com
                             <div class="reward-item">
                                 
                                 <img src="/public/images/supermini-winner.png" height="120">
-                                <h5 class="reward-head">{{ page.str.general.superMiniMarathon }} 15 กม.</h5>
+                                <h5 class="reward-head">{{ page.str.general.superMiniMarathon }} 15 {{ page.str.general.kmShort }}</h5>
                                 <div>{{ page.str.reward.description }}</div>
                             </div>
                         
                             <div class="reward-item">
                                 
                                 <img src="/public/images/funrun-winner.png" height="120">
-                                <h5 class="reward-head">{{ page.str.general.funRun }}  4 กม. </h5>
+                                <h5 class="reward-head">{{ page.str.general.funRun }}  4 {{ page.str.general.kmShort }} </h5>
                                 <div>{{ page.str.reward.description }}</div>
                             </div>
                             <div class="reward-item" >
@@ -416,7 +421,7 @@ URI     : https://colorlib.com
                             </div>
                         </div>
 
-                        <h5 class="text-center mt-5">รางวัลพิเศษ</h5>
+                        <h5 class="text-center mt-5">{{ page.str.reward.specialRewardTitle }}</h5>
                         <div class="d-flex flex-wrap justify-content-center">
                             <div class="text-center">
                                 <img src="/public/images/medicine.png" height="150">
@@ -443,7 +448,9 @@ URI     : https://colorlib.com
             <div class="container">
                 <div class="section-title">
                     <h3>{{ page.str.price.title }}</h3>
-                    <h5 class="text-muted">{{ page.str.price.tagline }}</h5>
+                    {% if page.onSale %}
+                        <h5 class="text-muted">{{ page.str.price.tagline }}</h5>
+                    {% endif %}
                 </div>
                 <div class="pricing">
                     <div class="d-flex flex-wrap justify-content-center text-center">
@@ -452,8 +459,13 @@ URI     : https://colorlib.com
                                 <div><img src="/public/images/undraw_finish_line.png" height="120"/></div>
                                 <small>{{ page.str.price.category }}</small>
                                 <h4>{{ page.str.general.superMiniMarathon }} <br> 15 {{ page.str.general.kmShort }}</h4>
-                                <div class="price">400<sub>{{ page.str.price.baht }}</sub></div>
-                                <del><div class="price">400<sub>{{ page.str.price.baht }}</sub></div></del>
+                                {% if page.onSale %}
+                                    <div class="price">350<sub>{{ page.str.price.baht }}</sub></div>
+                                {% endif %}
+                                {% if page.onSale %}<del>{% endif %}
+                                    <div class="price">400<sub>{{ page.str.price.baht }}</sub></div>
+                                {% if page.onSale %}</del>{% endif %}
+                            
                             </div>
                             <h5>{{ page.str.price.subTitle }}</h5>
                             <div class="list-group-item">{{ page.str.price.medal }}</div>
@@ -466,7 +478,12 @@ URI     : https://colorlib.com
                                 <div><img src="/public/images/undraw_Jogging.png" height="120"/></div>
                                 <small>{{ page.str.price.category }}</small>
                                 <h4>{{ page.str.general.funRun }}  4 {{ page.str.general.kmShort }}<br>&nbsp;<br>&nbsp;</h4>
-                                <span class="price">300<sub>{{ page.str.price.baht }}</sub></span>
+                                {% if page.onSale %}
+                                    <div class="price">250<sub>{{ page.str.price.baht }}</sub></div>
+                                {% endif %}
+                                {% if page.onSale %}<del>{% endif %}
+                                    <div class="price">300<sub>{{ page.str.price.baht }}</sub></div>
+                                {% if page.onSale %}</del>{% endif %}
                             </div>
                             <h5>{{ page.str.price.subTitle }}</h5>
                             <div class="list-group-item">{{ page.str.price.medal }}</div>
@@ -480,6 +497,7 @@ URI     : https://colorlib.com
                                 <small>{{ page.str.price.category }}</small>
                                 <h4>วิ่ง VIP<br>&nbsp;<br>&nbsp;</h4>
                                 <span class="price">1,500<sub>{{ page.str.price.baht }}</sub></span>
+                                {% if page.onSale %}<span class="price" style="font-size: 1rem;">&nbsp;</span>{% endif %}
                             </div>
                             <h5>{{ page.str.price.subTitle }}</h5>
                             <div class="list-group-item">{{ page.str.price.medal }}</div>
@@ -492,7 +510,12 @@ URI     : https://colorlib.com
                                     <div><img src="/public/images/undraw_book_lover.png" height="120"/></div>
                                 <small>{{ page.str.price.category }}</small>
                                 <h4>{{ page.str.general.funRun }} 4 {{ page.str.general.kmShort }}<br/><small>{{ page.str.price.runRunStudent }}</small><br>&nbsp;</h4>
-                                <span class="price">150<sub>{{ page.str.price.baht }}</sub></span>
+                                {% if page.onSale %}
+                                    <div class="price">100<sub>{{ page.str.price.baht }}</sub></div>
+                                {% endif %}
+                                {% if page.onSale %}<del>{% endif %}
+                                    <div class="price">150<sub>{{ page.str.price.baht }}</sub></div>
+                                {% if page.onSale %}</del>{% endif %}
                             </div>
                             <h5>{{ page.str.price.subTitle }}</h5>
                             <div class="list-group-item">{{ page.str.price.medal }}</div>
@@ -516,83 +539,87 @@ URI     : https://colorlib.com
                 <div class="section light-bg">
                     <div class="container">
                         <div class="section-title">
-                            <h3>{{ page.str.price.conditionTitle }}</h3>
+                            <h4>{{ page.str.price.conditionTitle }}</h4>
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-lg-8 col-12">
                                 <ol>
-                                    <li>ระบบรับสมัครแบ่งออกเป็นแบบบุคคลและแบบ PA-GUN-MA-RUN (แบบกลุ่ม ๆ ละไม่เกิน 5 คน)</li>
-                                    <li>เมื่อสมัครแล้วหลังส่งใบสมัคร<u>ต้องชำระเงินภายใน 48 ชั่วโมง</u> หากชำระไม่ทันจะถือว่าสละสิทธิ์
-                                    </li>
+                                    {% for item in page.str.price.conditions %}
+                                        <li>{{ item }}</li>
+                                    {% endfor %}
                                 </ol>
-                               
-                                <center><div class="mt-4" style="font-weight: 500">เมื่อชำระเงินแล้วให้ส่งหลักฐานการโอนเงินผ่านทาง </div>
-                                    <div class="my-3">line@: PAGUNMARUN <br>
-                                    email:
-                                            <i class="fas fa-envelope-square"></i>&nbsp;<a 
-                                            href="mailto:pagunmarun@gmail.com">pagunmarun@gmail.com</a></div>
-                                       
-                                        รอการตรวจสอบไม่เกิน 3 วันทำการ
-                                    </center>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="section-title">
-                    <h3>ช่องทางการชำระเงิน</h3>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-4">
-                        <img class="img-fluid" src="/public/images/payment.png"/>
-                    </div>
-                    <div class="col-sm-8">
-                            <ol>
-                                    <li>ชำระด้วยเงินสด ณ สำนักงานคณะเทคนิคการแพทย์ มหาวิทยาลัยสงขลานครินทร์</li>
-                                    <li>โอนเข้าบัญชี โครงการ PA-GUN-MA-RUN (พา-กัน-มา-รัน) ครั้งที่ 1 ธนาคารไทยพาณิชย์ เลขที่
-                                        565-499915-6</li>
-                                </ol>
-                                <div class="section-title">
-                                        <h5>หมายเหตุ</h5>
-                                    </div>
-                                    <ol>
-                                            <li>สามารถชำระเงินหลังการสมัครภายใน 48 ชั่วโมง
-                                                หากไม่ชำระเงินภายในเวลาที่กำหนดระบบจะยกเลิกการสมัครโดยอัตโนมัติ</li>
-                                            <li>นักวิ่งทุกประเภทเข้าเส้นชัยก่อน 08.00 น.จะได้รับเหรียญที่ระลึก</li>
-                                        </ol>
-                    </div>
-                </div>
-                <!-- <div class="row justify-content-center">
-                    <div class="col-lg-8 col-12">
-                        <ol>
-                            <li>ชำระด้วยเงินสด ณ สำนักงานคณะเทคนิคการแพทย์ มหาวิทยาลัยสงขลานครินทร์</li>
-                            <li>โอนเข้าบัญชี โครงการ PA-GUN-MA-RUN (พา-กัน-มา-รัน) ครั้งที่ 1 ธนาคารไทยพาณิชย์ เลขที่
-                                565-499915-6</li>
-                        </ol>
-                    </div>
-                </div>
-                <div class="section-title">
-                    <h5>หมายเหตุ</h5>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-12">
-                        <ol>
-                            <li>สามารถชำระเงินหลังการสมัครภายใน 48 ชั่วโมง
-                                หากไม่ชำระเงินภายในเวลาที่กำหนดระบบจะยกเลิกการสมัครโดยอัตโนมัติ</li>
-                            <li>นักวิ่งทุกประเภทเข้าเส้นชัยก่อน 08.00 น.จะได้รับเหรียญที่ระลึก</li>
-                        </ol>
-                    </div>
-                </div> -->
             </div>
             <!-- // end .pricing -->
 
         </div>
 
+        <div class="section" id="confirm-payment">
+                <div class="container">
+                    <div class="section-title">
+                        <h3>{{ page.str.payment.title }}</h3>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-12">
+
+                                <div class="mb-4">1. {{ page.str.payment.step1 }}</div>
+                                
+                                <div class="d-flex flex-wrap justify-content-center">
+                                    <div class="reward-item">
+                                        <img height="150" src="/public/images/undraw_wallet.png">
+                                        <h5>{{ page.str.payment.step1_1_title }}</h5>
+                                        <div>{{ page.str.payment.step1_1_description }}</div>
+                                    </div>
+                                
+                                    <div class="reward-item">
+                                        <img height="150" src="/public/images/payment.png" >
+                                        <h5>{{ page.str.payment.step1_2_title }}</h5>
+                                        <div>{{ page.str.payment.step1_2_description }}</div>
+                                    </div>
+                                </div>
+
+                                <div class="my-4">2. {{ page.str.payment.step2 }}</div>
+
+                                <div class="row my-3 justify-content-center">
+                                    <div class="col-2" ><div style="font-size: 4rem;"><i class="fas fa-link"></i></div></div>
+                                    <div class="col-sm-6 col-10 my-auto"><h5><a href="/register/web/index.php?r=site%2Fcheckstatus&language=th">{{ page.str.payment.registerStatus }}</a></h5>
+                                    <ol>
+                                        <li>{{ page.str.payment.step2_1 }} <a href="/register/web/index.php?r=site%2Fcheckstatus&language=th"><i class="fas fa-link"></i> {{ page.str.payment.registerStatus }}</a></li>
+                                        <li>{{ page.str.payment.step2_2 }}</li>
+                                    </ol>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="row my-3 justify-content-center">
+                                    <div class="col-2" ><div style="font-size: 4rem;"><i class="fab fa-line"></i></div></div>
+                                    <div class="col-sm-6 col-10 my-auto"><h5>LINE @:PAGUNMARUN</h5>
+                                    {{ page.str.payment.step2_3 }} LINE @:PAGUNMARUN</div>
+                                </div>
+                                <div class="row my-3 justify-content-center">
+                                    <div class="col-2" ><div style="font-size: 4rem;"><i class="fas fa-envelope-square"></i></div></div>
+                                    <div class="col-sm-6 col-10 my-auto"><h5> <a href="mailto:pagunmarun@gmail.com">Email: pagunmarun@gmail.com</a></h5>
+                                    {{ page.str.payment.step2_3 }} <a href="mailto:pagunmarun@gmail.com">Email: pagunmarun@gmail.com</a></div>
+                                </div>
+
+                            <div class="my-4">3. {{ page.str.payment.step3 }} <a href="/register/web/index.php?r=site%2Fcheckstatus&language=th"><i class="fas fa-link"></i> {{ page.str.payment.registerStatus }}</a></li> {{ page.str.payment.step3Rest }}</div>
+                        
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+
         <div class="section bg-color" id="contact">
             <div class="container">
 
                 <div class="section-title">
-                    <h3 class="contact-text-color">ติดต่อเรา</h3>
+                    <h3 class="contact-text-color">{{ page.str.contact.title }}</h3>
                 </div>
                 <div class="row justify-content-md-center">
                     <div class="col-md-6 ">
