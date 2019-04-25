@@ -116,9 +116,9 @@ URI     : https://colorlib.com
                         <img src="/public/images/big-medal.png" />
                     </div>
                     <div class="hero-tagline">
-                        <p class="tagline">{{ page.str.section.hero.raceDate }}</p>
+                        <p class="tagline">{{ page.str.hero.raceDate }}</p>
                         <p class="tagline">
-                            เดิน - วิ่งพากันมารันเพื่อสุขภาพ ครั้งที่ 1 ประจำปี 2562
+                            {{ page.str.hero.tagline }}
                         </p>
                         <p>
                             MTPSU x PSUIC
@@ -136,7 +136,7 @@ URI     : https://colorlib.com
             <div class="row">
 
                 <div class="col-md-6">
-                    <h3>สปอนเซอร์</h3>
+                    <h3>Sponsor</h3>
                     <div class="d-flex flex-wrap justify-content-center sponsors">
                             <img src="/public/images/sponsors/medtech-logo-th.png" alt="client logos">
                             <img src="/public/images/sponsors/psuic-logo-en.png" alt="client logos">
@@ -145,7 +145,7 @@ URI     : https://colorlib.com
 
                     <div class="col-md">
                         <div class="section-title">
-                            <h3>ฟิตร่างกายให้พร้อมแล้วไปวิ่งกัน</h3>
+                            <h3>{{ page.str.countdown.title }}</h3>
                             <ul class="countdown row justify-content-center" id="countdown">
                                 <li>
                                     <div class="countdown-number col" id="countdown-days"></div>
@@ -175,15 +175,12 @@ URI     : https://colorlib.com
 
                     <div class="section-title">
                         <!-- <small>Pagunmanrun</small> -->
-                        <h3>ข้อมูลทั่วไป</h3>
-                        <h3>พากันมารัน</h3>
-                        <h6 class="mb-3 text-body">วิ่งแล้วดี จึงบอกต่อ</h6>
+                        <h3>{{ page.str.info.title }}</h3>
+                        <h3>{{ page.str.general.raceTitle }}</h3>
+                        <h6 class="mb-3 text-body">{{ page.str.info.tagline }}</h6>
                         <div class="row justify-content-center">
                             <div class="col-10">
-                                กองทุนคณะเทคนิคการแพทย์ ร่วมกับ กองทุนวิทยาลัยนานาชาติ มหาวิทยาลัยสงขลานครินทร์
-                                จัดโครงการ
-                                PA-GUN-MA-RUN เพื่อระดมเงินสำหรับเป็นทุนแก่นักศึกษาที่มีผลการเรียนดีแต่ขาดแคลนทุนทรัพย์
-                                และสนับสนุนการจัดหาเครื่องมือและอุปกรณ์เพื่อใช้ในการศึกษา
+                                {{ page.str.info.description }}
                             </div>
                         </div>
                     </div>
@@ -191,15 +188,15 @@ URI     : https://colorlib.com
                     <div class="d-flex flex-wrap justify-content-center">
                         <a href="#map" class="btn info-button info-item justify-content-center">
                             <div class="info-item-icon"><i class="fas fa-map-marked-alt"></i></div>
-                            <div class="info-item-name">แผนที่</div>
+                            <div class="info-item-name">{{ page.str.info.buttonMap }}</div>
                         </a>
                         <a href="#age-range" class="btn info-button info-item justify-content-center">
                             <div class="info-item-icon"><i class="fas fa-users"></i></div>
-                            <div class="info-item-name">กลุ่มอายุ</div>
+                            <div class="info-item-name">{{ page.str.info.buttonAgeRange }}</div>
                         </a>
                         <a href="#reward" class="btn info-button info-item justify-content-center">
                             <div class="info-item-icon"><i class="fas fa-trophy"></i></div>
-                            <div class="info-item-name">รางวัล</div>
+                            <div class="info-item-name">{{ page.str.info.buttonReward }}</div>
                         </a>
                         <!-- <a href="#" class="btn info-button info-item justify-content-center">
                             <div class="info-item-icon"><i class="fas fa-exclamation-triangle"></i></div>
@@ -207,11 +204,11 @@ URI     : https://colorlib.com
                         </a> -->
                         <a href="#cost-n-payment" class="btn info-button info-item justify-content-center">
                             <div class="info-item-icon"><i class="fas fa-money-bill-alt"></i></div>
-                            <div class="info-item-name">ราคาและ<br />การชำระเงิน</div>
+                            <div class="info-item-name">{{ page.str.info.buttonPrice }}</div>
                         </a>
                         <a href="#medal" class="btn info-button info-item justify-content-center">
                             <div class="info-item-icon"><i class="fas fa-medal"></i></div>
-                            <div class="info-item-name">เสื้อและ<br />เหรียญรางวัล</div>
+                            <div class="info-item-name">{{ page.str.info.buttonMedal }}</div>
                         </a>
 
                     </div>
