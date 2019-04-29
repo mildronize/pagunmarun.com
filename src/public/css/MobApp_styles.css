@@ -172,6 +172,7 @@ p.lead {
 .section-title {
     text-align: center;
     margin-bottom: 3rem;
+    text-transform: uppercase;
 }
 
 .section-title small {

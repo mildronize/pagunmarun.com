@@ -171,11 +171,11 @@ URI     : https://colorlib.com
 
             <div class="section light-bg" id="info">
 
-                <div class="container">
+                <div class="container text-center">
 
                     <div class="section-title">
-                        <!-- <small>Pagunmanrun</small> -->
                         <h3>{{ page.str.info.title }}</h3>
+                    </div>
                         <h3>{{ page.str.general.raceTitle }}</h3>
                         <h6 class="mb-3 text-body">{{ page.str.info.tagline }}</h6>
                         <div class="row justify-content-center">
@@ -183,7 +183,7 @@ URI     : https://colorlib.com
                                 {{ page.str.info.description }}
                             </div>
                         </div>
-                    </div>
+                    
 
                     <div class="d-flex flex-wrap justify-content-center">
                         <a href="#map" class="btn info-button info-item justify-content-center">
@@ -504,7 +504,7 @@ URI     : https://colorlib.com
                             <div class="card-head">
                                     <div><img src="/public/images/undraw_book_lover.png" height="120"/></div>
                                 <small>{{ page.str.price.category }}</small>
-                                <h4>{{ page.str.general.funRun }} 4 {{ page.str.general.kmShort }}<br/><small>{{ page.str.price.runRunStudent }}</small><br>&nbsp;</h4>
+                                <h4>{{ page.str.general.funRun }} 4 {{ page.str.general.kmShort }}<br/><small style="font-size: 1rem">{{ page.str.price.runRunStudent }}</small><br>&nbsp;</h4>
                                 {% if page.onSale %}
                                     <div class="price">100<sub>{{ page.str.price.baht }}</sub></div>
                                 {% endif %}
