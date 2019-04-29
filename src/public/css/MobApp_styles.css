@@ -529,13 +529,15 @@ header {
 /* REWARD */
 .reward-item{
     text-align: center;
-    width: 250px;
-    margin-bottom: 2rem;
+    width: 270px;
+    /* margin-bottom: 2rem; */
+    padding: 2rem 2rem;
+    margin: 0.6rem;
 }
 .reward-head{
     font-weight: bold;
     font-size: 1.1rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 

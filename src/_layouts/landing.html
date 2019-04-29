@@ -275,23 +275,19 @@ URI     : https://colorlib.com
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-6">
-                            <div class="card pricing">
-                                <div class="card-body">
-                                    <a data-fancybox="gallery" href="/public/images/new-shirt.png">
-                                        <img src="/public/images/new-shirt.png" class="img-fluid">
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="col-sm-6 pb-3 px-2">
+        
+                        <a data-fancybox="gallery" href="/public/images/new-shirt.png">
+                            <img src="/public/images/new-shirt.png" class="img-fluid">
+                        </a>
+                            
                     </div>
-                    <div class="col-6">
-                            <div class="card pricing">
-                                <div class="card-body">
-                                    <a data-fancybox="gallery" href="/public/images/medal.png">
-                                        <img src="/public/images/medal.png" class="img-fluid">
-                                    </a>
-                                </div>
-                            </div>
+                    <div class="col-sm-6 pb-3 px-2">
+                        
+                        <a data-fancybox="gallery" href="/public/images/medal.png">
+                            <img src="/public/images/medal.png" class="img-fluid">
+                        </a>
+                             
                     </div>
                     <!-- // end .pricing -->
 
@@ -400,20 +396,20 @@ URI     : https://colorlib.com
                 <div class="row justify-content-center">
                     <div class="col-lg-10 col-12">
                         <div class="d-flex flex-wrap justify-content-center">
-                            <div class="reward-item">
+                            <div class="reward-item card">
                                 
                                 <img src="/public/images/supermini-winner.png" height="120">
                                 <h5 class="reward-head">{{ page.str.general.superMiniMarathon }} 15 {{ page.str.general.kmShort }}</h5>
                                 <div>{{ page.str.reward.description }}</div>
                             </div>
                         
-                            <div class="reward-item">
+                            <div class="reward-item card">
                                 
                                 <img src="/public/images/funrun-winner.png" height="120">
                                 <h5 class="reward-head">{{ page.str.general.funRun }}  4 {{ page.str.general.kmShort }} </h5>
                                 <div>{{ page.str.reward.description }}</div>
                             </div>
-                            <div class="reward-item" >
+                            <div class="reward-item card" >
                                     
                                 <img src="/public/images/group-run.png" height="120">
                                 <h5 class="reward-head">{{ page.str.reward.groupRunRewardTitle }}</h5>
@@ -445,7 +441,6 @@ URI     : https://colorlib.com
         </div>
 
         <div class="section light-bg" id="cost-n-payment">
-            <div class="container">
                 <div class="section-title">
                     <h3>{{ page.str.price.title }}</h3>
                     {% if page.onSale %}
@@ -554,7 +549,6 @@ URI     : https://colorlib.com
                     </div>
                 </div>
 
-            </div>
             <!-- // end .pricing -->
 
         </div>
