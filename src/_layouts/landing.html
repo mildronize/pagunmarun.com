@@ -670,6 +670,11 @@ URI     : https://colorlib.com
     <!-- include one or more optional Cycle2 plugins -->
     <script src="/public/js/jquery.cycle2.flip.min.js"></script>
 
+    <!--  Google Analytics Script-->
+    {% if jekyll.environment == "production" %}
+        {% include google_analytics.html %}
+    {% endif %}
+
     <script type="text/javascript">
 
         $("#countdown")
