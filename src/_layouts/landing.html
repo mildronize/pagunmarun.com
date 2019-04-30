@@ -62,15 +62,12 @@ URI     : https://colorlib.com
                                 </li>
                                 <li class="nav-item"> <a class="nav-link" href="#info">{{ page.str.menu.info }}</a>
                                 </li>
-                                <li class="nav-item"> <a class="nav-link"
-                                        href="#">{{ page.str.menu.status }}</a>
+                                <li class="nav-item"> <a class="nav-link" href="#">{{ page.str.menu.status }}</a>
                                 </li>
                                 <li class="nav-item"> <a class="nav-link"
                                         href="#contact">{{ page.str.menu.contact }}</a>
                                 </li>
-                                <li class="nav-item"><a
-                                        href="#"
-                                        class="nav-link">{{
+                                <li class="nav-item"><a href="#" class="nav-link">{{
                                     page.str.menu.register }}</a></li>
 
                                 <li class="nav-item">
@@ -103,10 +100,7 @@ URI     : https://colorlib.com
                 <div class="w-100 text-white">
                     <!-- <img class="hero-logo-img" src="/public/images/logo02.png" /> -->
                     <div class="d-flex justify-content-center">
-                            <div class="text-center cycle-slideshow" 
-                            data-cycle-fx=flipHorz
-                            data-cycle-timeout=2000
-                            >
+                        <div class="text-center cycle-slideshow" data-cycle-fx=flipHorz data-cycle-timeout=2000>
                             <img class="hero-logo-img" src="/public/images/logo02.png">
                             <img class="hero-logo-img" src="/public/images/front-shirt.png">
                             <img class="hero-logo-img" src="/public/images/back-shirt.png">
@@ -138,511 +132,638 @@ URI     : https://colorlib.com
                 <div class="col-md-6">
                     <h3>Sponsor</h3>
                     <div class="d-flex flex-wrap justify-content-center sponsors">
-                            <img src="/public/images/sponsors/medtech-logo-th.png" alt="client logos">
-                            <img src="/public/images/sponsors/psuic-logo-en.png" alt="client logos">
+                        <img src="/public/images/sponsors/medtech-logo-th.png" alt="client logos">
+                        <img src="/public/images/sponsors/psuic-logo-en.png" alt="client logos">
                     </div>
                 </div>
 
-                    <div class="col-md">
-                        <div class="section-title">
-                            <h3>{{ page.str.countdown.title }}</h3>
-                            <ul class="countdown row justify-content-center" id="countdown">
-                                <li>
-                                    <div class="countdown-number col" id="countdown-days"></div>
-                                    {{ page.str.general.days }}
-                                </li>
-                                <li>
-                                    <div class="countdown-number col" id="countdown-hours"></div>
-                                    {{ page.str.general.hours }}
-                                </li>
-                                <li>
-                                    <div class="countdown-number col" id="countdown-minutes"></div>{{ page.str.general.minutes
-                                }}
-                                </li>
-                                <li>
-                                    <div class="countdown-number col" id="countdown-seconds"></div>{{ page.str.general.seconds
-                                }}
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section light-bg" id="info">
-
-                <div class="container text-center">
-
+                <div class="col-md">
                     <div class="section-title">
-                        <h3>{{ page.str.info.title }}</h3>
-                    </div>
-                        <h3>{{ page.str.general.raceTitle }}</h3>
-                        <h6 class="mb-3 text-body">{{ page.str.info.tagline }}</h6>
-                        <div class="row justify-content-center">
-                            <div class="col-10">
-                                {{ page.str.info.description }}
-                            </div>
-                        </div>
-                    
-
-                    <div class="d-flex flex-wrap justify-content-center">
-                        <a href="#map" class="btn info-button info-item justify-content-center">
-                            <div class="info-item-icon"><i class="fas fa-map-marked-alt"></i></div>
-                            <div class="info-item-name">{{ page.str.info.buttonMap }}</div>
-                        </a>
-                        <a href="#age-range" class="btn info-button info-item justify-content-center">
-                            <div class="info-item-icon"><i class="fas fa-users"></i></div>
-                            <div class="info-item-name">{{ page.str.info.buttonAgeRange }}</div>
-                        </a>
-                        <a href="#reward" class="btn info-button info-item justify-content-center">
-                            <div class="info-item-icon"><i class="fas fa-trophy"></i></div>
-                            <div class="info-item-name">{{ page.str.info.buttonReward }}</div>
-                        </a>
-                        <!-- <a href="#" class="btn info-button info-item justify-content-center">
-                            <div class="info-item-icon"><i class="fas fa-exclamation-triangle"></i></div>
-                            <div class="info-item-name">กฏและกติกา</div>
-                        </a> -->
-                        <a href="#medal" class="btn info-button info-item justify-content-center">
-                            <div class="info-item-icon"><i class="fas fa-medal"></i></div>
-                            <div class="info-item-name">{{ page.str.info.buttonMedal }}</div>
-                        </a>
-                        <a href="#cost-n-payment" class="btn info-button info-item justify-content-center">
-                            <div class="info-item-icon"><i class="fas fa-money-bill-alt"></i></div>
-                            <div class="info-item-name">{{ page.str.info.buttonPrice }}</div>
-                        </a>
-                        <a href="#confirm-payment" class="btn info-button info-item justify-content-center">
-                            <div class="info-item-icon"><i class="fas fa-receipt"></i></div>
-                            <div class="info-item-name">{{ page.str.info.buttonPayment }}</div>
-                        </a>
-                        
-
-                    </div>
-
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="section" id="map">
-            <div class="container">
-                <div class="section-title">
-                    <h3>{{ page.str.map.title }}</h3>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="card-deck">
-                            <div class="card pricing">
-                                <div class="card-head">
-                                    <h4>{{ page.str.general.superMiniMarathon }} 15 {{ page.str.general.kmShort }}</h4>
-                                </div>
-                                <div class="card-body">
-                                    <a data-fancybox="gallery" href="/public/images/minimarathon-map.jpg">
-                                        <img src="/public/images/minimarathon-map.jpg" class="img-fluid">
-                                    </a>
-                                    *หมายเหตุ: เส้นทางจะมีการเปลี่ยนแปลงในอนาคต
-                                </div>
-                            </div>
-                            <div class="card pricing">
-                                <div class="card-head">
-                                    <h4>{{ page.str.general.funRun }} 4 {{ page.str.general.kmShort }}</h4>
-                                </div>
-
-                                <div class="card-body">
-                                    <a data-fancybox="gallery" href="/public/images/funrun-map.jpg">
-                                        <img src="/public/images/funrun-map.jpg" class="img-fluid">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- // end .pricing -->
-
-
-                </div>
-
-            </div>
-        </div>
-        <!-- // end .section -->
-
-
-        <div class="section" id="medal">
-            <div class="container">
-                <div class="section-title">
-                    <h3>{{ page.str.medal.title }}</h3>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 pb-3 px-2">
-        
-                        <a data-fancybox="gallery" href="/public/images/new-shirt.png">
-                            <img src="/public/images/new-shirt.png" class="img-fluid">
-                        </a>
-                            
-                    </div>
-                    <div class="col-sm-6 pb-3 px-2">
-                        
-                        <a data-fancybox="gallery" href="/public/images/medal.png">
-                            <img src="/public/images/medal.png" class="img-fluid">
-                        </a>
-                             
-                    </div>
-                    <!-- // end .pricing -->
-
-
-                </div>
-
-            </div>
-        </div>
-
-
-        <div class="section light-bg" id="age-range">
-            <div class="container">
-                <div class="section-title">
-                    <h3>{{ page.str.ageRange.title }}</h3>
-                </div>
-                <div class="row justify-content-center text-center">
-                    <div class="col-10">
-                        <div class="card-deck">
-                            <div class="card pricing">
-                                <div class="card-head">
-                                    <img src="/public/images/undraw_finish_line.png" height="150">
-                                    <h4>{{ page.str.general.superMiniMarathon }} <div><sub>15 {{ page.str.general.kmShort }}</sub></div>
-                                    </h4>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-sm">
-                                        <h4>{{ page.str.ageRange.categoryMale }} </h4>
-                                        <ul class="list-group list-group-flush">
-                                            {% for item in page.str.ageRange.superMiniMarathon.male %}
-                                                <div class="list-group-item">{{ item }}</div>
-                                            {% endfor %}
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm">
-                                        <h4>{{ page.str.ageRange.categoryFemale }}</h4>
-                                        <ul class="list-group list-group-flush">
-                                            {% for item in page.str.ageRange.superMiniMarathon.female %}
-                                                <div class="list-group-item">{{ item }}</div>
-                                            {% endfor %}
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-
-                                </div>
-                            </div>
-                            <div class="card pricing">
-                                <div class="card-head">
-                                    <img src="/public/images/undraw_Jogging.png" height="150">
-                                    <h4>{{ page.str.general.funRun }}  <div><sub>4 {{ page.str.general.kmShort }} </sub></div>
-                                    </h4>
-                                </div>
-
-                                
-                                <div class="row">
-                                        <div class="col-sm">
-                                            <h4>{{ page.str.ageRange.categoryMale }}</h4>
-                                            <ul class="list-group list-group-flush">
-                                                {% for item in page.str.ageRange.funRun.male %}
-                                                    <div class="list-group-item">{{ item }}</div>
-                                                {% endfor %}
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm">
-                                            <h4>{{ page.str.ageRange.categoryFemale }}</h4>
-                                            <ul class="list-group list-group-flush">
-                                                {% for item in page.str.ageRange.funRun.female %}
-                                                    <div class="list-group-item">{{ item }}</div>
-                                                {% endfor %}
-                                            </ul>
-                                        </div>
-                                    </div>
-                                <div class="mt-3 text-body">{{ page.str.ageRange.groupRun }}</div>
-
-                                <div class="card-body"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- // end .pricing -->
-
-                </div>
-                <div style="margin: 1rem"></div>
-                <div class="section-title">
-                    <h3>{{ page.str.rule.title }}</h3>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-12">
-                        <ul>
-                            {% for item in page.str.rule.rules %}
-                                <li>{{ item }}</li>
-                            {% endfor %}
+                        <h3>{{ page.str.countdown.title }}</h3>
+                        <ul class="countdown row justify-content-center" id="countdown">
+                            <li>
+                                <div class="countdown-number col" id="countdown-days"></div>
+                                {{ page.str.general.days }}
+                            </li>
+                            <li>
+                                <div class="countdown-number col" id="countdown-hours"></div>
+                                {{ page.str.general.hours }}
+                            </li>
+                            <li>
+                                <div class="countdown-number col" id="countdown-minutes"></div>{{ page.str.general.minutes
+                                }}
+                            </li>
+                            <li>
+                                <div class="countdown-number col" id="countdown-seconds"></div>{{ page.str.general.seconds
+                                }}
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- // end .section -->
-        <div class="section" id="reward">
-            <div class="container">
-                <div class="section-title">
-                    <h3>{{ page.str.reward.title }}</h3> 
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-10 col-12">
-                        <div class="d-flex flex-wrap justify-content-center">
-                            <div class="reward-item card">
-                                
-                                <img src="/public/images/supermini-winner.png" height="120">
-                                <h5 class="reward-head">{{ page.str.general.superMiniMarathon }} 15 {{ page.str.general.kmShort }}</h5>
-                                <div>{{ page.str.reward.description }}</div>
-                            </div>
-                        
-                            <div class="reward-item card">
-                                
-                                <img src="/public/images/funrun-winner.png" height="120">
-                                <h5 class="reward-head">{{ page.str.general.funRun }}  4 {{ page.str.general.kmShort }} </h5>
-                                <div>{{ page.str.reward.description }}</div>
-                            </div>
-                            <div class="reward-item card" >
-                                    
-                                <img src="/public/images/group-run.png" height="120">
-                                <h5 class="reward-head">{{ page.str.reward.groupRunRewardTitle }}</h5>
-                                <div>{{ page.str.reward.groupRunDescription }}</div>
-                            </div>
-                        </div>
+        <div class="section light-bg" id="info">
 
-                        <h5 class="text-center mt-5">{{ page.str.reward.specialRewardTitle }}</h5>
-                        <div class="d-flex flex-wrap justify-content-center">
-                            <div class="text-center">
-                                <img src="/public/images/medicine.png" height="150">
-                                <div>{{ page.str.reward.healthCheck }}</div>
-                            </div>
-                        
-                            <div class="text-center">
-                                <img src="/public/images/photo.png" height="150">
-                                <div>{{ page.str.reward.photoService }}</div>
-                            </div>
-                        </div>
-                        <h5 class="text-center mt-4">{{ page.str.reward.specialRewardRuleTitle }}</h5>
-                        <ol>
-                            {% for item in page.str.reward.specialRewardRules %}
-                                <li>{{ item }}</li>
-                            {% endfor %}
-                        </ol>
+            <div class="container text-center">
+
+                <div class="section-title">
+                    <h3>{{ page.str.info.title }}</h3>
+                </div>
+                <h3>{{ page.str.general.raceTitle }}</h3>
+                <h6 class="mb-3 text-body">{{ page.str.info.tagline }}</h6>
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        {{ page.str.info.description }}
                     </div>
                 </div>
+
+
+                <div class="d-flex flex-wrap justify-content-center">
+                    <a href="#map" class="btn info-button info-item justify-content-center">
+                        <div class="info-item-icon"><i class="fas fa-map-marked-alt"></i></div>
+                        <div class="info-item-name">{{ page.str.info.buttonMap }}</div>
+                    </a>
+                    <a href="#age-range" class="btn info-button info-item justify-content-center">
+                        <div class="info-item-icon"><i class="fas fa-users"></i></div>
+                        <div class="info-item-name">{{ page.str.info.buttonAgeRange }}</div>
+                    </a>
+                    <a href="#reward" class="btn info-button info-item justify-content-center">
+                        <div class="info-item-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="info-item-name">{{ page.str.info.buttonReward }}</div>
+                    </a>
+                    <!-- <a href="#" class="btn info-button info-item justify-content-center">
+                            <div class="info-item-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="info-item-name">กฏและกติกา</div>
+                        </a> -->
+                    <a href="#medal" class="btn info-button info-item justify-content-center">
+                        <div class="info-item-icon"><i class="fas fa-medal"></i></div>
+                        <div class="info-item-name">{{ page.str.info.buttonMedal }}</div>
+                    </a>
+                    <a href="#cost-n-payment" class="btn info-button info-item justify-content-center">
+                        <div class="info-item-icon"><i class="fas fa-money-bill-alt"></i></div>
+                        <div class="info-item-name">{{ page.str.info.buttonPrice }}</div>
+                    </a>
+                    <a href="#confirm-payment" class="btn info-button info-item justify-content-center">
+                        <div class="info-item-icon"><i class="fas fa-receipt"></i></div>
+                        <div class="info-item-name">{{ page.str.info.buttonPayment }}</div>
+                    </a>
+
+
+                </div>
+
+
             </div>
         </div>
 
-        <div class="section light-bg" id="cost-n-payment">
-                <div class="section-title">
-                    <h3>{{ page.str.price.title }}</h3>
-                    {% if page.onSale %}
+    </div>
+
+    <div class="section" id="map">
+        <div class="container">
+            <div class="section-title">
+                <h3>{{ page.str.map.title }}</h3>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="card-deck">
+                        <div class="card pricing">
+                            <div class="card-head">
+                                <h4>{{ page.str.general.superMiniMarathon }} 15 {{ page.str.general.kmShort }}</h4>
+                            </div>
+                            <div class="card-body">
+                                <a data-fancybox="gallery" href="/public/images/minimarathon-map.jpg">
+                                    <img src="/public/images/minimarathon-map.jpg" class="img-fluid">
+                                </a>
+                                *หมายเหตุ: หากมีกรณีจำเป็นที่จะต้องเปลี่ยนแปลงเส้นทางจะแจ้งให้ทราบล่วงหน้า
+                            </div>
+                        </div>
+                        <div class="card pricing">
+                            <div class="card-head">
+                                <h4>{{ page.str.general.funRun }} 4 {{ page.str.general.kmShort }}</h4>
+                            </div>
+
+                            <div class="card-body">
+                                <a data-fancybox="gallery" href="/public/images/funrun-map.jpg">
+                                    <img src="/public/images/funrun-map.jpg" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- // end .pricing -->
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- // end .section -->
+
+
+    <div class="section" id="medal">
+        <div class="container">
+            <div class="section-title">
+                <h3>{{ page.str.medal.title }}</h3>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-6 pb-3 px-2">
+
+                    <a data-fancybox="gallery" href="/public/images/new-shirt.png">
+                        <img src="/public/images/new-shirt.png" class="img-fluid">
+                    </a>
+
+                </div>
+                <div class="col-sm-6 pb-3 px-2">
+
+                    <a data-fancybox="gallery" href="/public/images/medal.png">
+                        <img src="/public/images/medal.png" class="img-fluid">
+                    </a>
+
+                </div>
+                <!-- // end .pricing -->
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="section light-bg" id="age-range">
+        <div class="container">
+            <div class="section-title">
+                <h3>{{ page.str.ageRange.title }}</h3>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-11">
+                    <div class="card-deck">
+                        <div class="card pricing">
+                            <div class="card-head">
+                                <img src="/public/images/undraw_finish_line.png" height="150">
+                                <h4>{{ page.str.general.superMiniMarathon }} <div><sub>15
+                                            {{ page.str.general.kmShort }}</sub></div>
+                                </h4>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm">
+                                    <h4>{{ page.str.ageRange.categoryMale }} </h4>
+                                    <ul class="list-group list-group-flush">
+                                        {% for item in page.str.ageRange.superMiniMarathon.male %}
+                                        <div class="list-group-item">{{ item }}</div>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div class="col-sm">
+                                    <h4>{{ page.str.ageRange.categoryFemale }}</h4>
+                                    <ul class="list-group list-group-flush">
+                                        {% for item in page.str.ageRange.superMiniMarathon.female %}
+                                        <div class="list-group-item">{{ item }}</div>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+
+                            </div>
+                        </div>
+                        <div class="card pricing">
+                            <div class="card-head">
+                                <img src="/public/images/undraw_Jogging.png" height="150">
+                                <h4>{{ page.str.general.funRun }} <div><sub>4 {{ page.str.general.kmShort }} </sub>
+                                    </div>
+                                </h4>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-sm">
+                                    <h4>{{ page.str.ageRange.categoryMale }}</h4>
+                                    <ul class="list-group list-group-flush">
+                                        {% for item in page.str.ageRange.funRun.male %}
+                                        <div class="list-group-item">{{ item }}</div>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div class="col-sm">
+                                    <h4>{{ page.str.ageRange.categoryFemale }}</h4>
+                                    <ul class="list-group list-group-flush">
+                                        {% for item in page.str.ageRange.funRun.female %}
+                                        <div class="list-group-item">{{ item }}</div>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="card-body"></div>
+                        </div>
+                        <div class="card pricing">
+                            <div class="card-head">
+                                <img src="/public/images/group-run.png" height="150">
+                                <h4>ฟันรัน (พากันมารัน)<div><sub>4 {{ page.str.general.kmShort }} </sub></div>
+                                </h4>
+                            </div>
+
+                            <div class="mt-3 text-body">{{ page.str.ageRange.groupRun }}</div>
+
+                            <div class="card-body"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // end .pricing -->
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- // end .section -->
+    <div class="section" id="reward">
+        <div class="container">
+            <div class="section-title">
+                <h3>{{ page.str.reward.title }}</h3>
+            </div>
+
+
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-12">
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="reward-item card">
+
+                            <img src="/public/images/supermini-winner.png" height="120">
+                            <h5 class="reward-head">{{ page.str.general.superMiniMarathon }} 15
+                                {{ page.str.general.kmShort }}</h5>
+                            <div>{{ page.str.reward.description }}</div>
+                        </div>
+
+                        <div class="reward-item card">
+
+                            <img src="/public/images/funrun-winner.png" height="120">
+                            <h5 class="reward-head">{{ page.str.general.funRun }} 4 {{ page.str.general.kmShort }} </h5>
+                            <div>{{ page.str.reward.description }}</div>
+                        </div>
+                        <div class="reward-item card">
+
+                            <img src="/public/images/group-run.png" height="120">
+                            <h5 class="reward-head">{{ page.str.reward.groupRunRewardTitle }}</h5>
+                            <div>{{ page.str.reward.groupRunDescription }}</div>
+                        </div>
+                    </div>
+
+                    <h5 class="text-center mt-5">{{ page.str.reward.specialRewardTitle }}</h5>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="text-center">
+                            <img src="/public/images/medicine.png" height="150">
+                            <div>{{ page.str.reward.healthCheck }}</div>
+                        </div>
+
+                        <div class="text-center">
+                            <img src="/public/images/photo.png" height="150">
+                            <div>{{ page.str.reward.photoService }}</div>
+                        </div>
+                    </div>
+                    <h5 class="text-center mt-4">{{ page.str.reward.specialRewardRuleTitle }}</h5>
+                    <ol>
+                        {% for item in page.str.reward.specialRewardRules %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section light-bg" id="cost-n-payment">
+        <div class="section-title">
+            <h3>{{ page.str.price.title }}</h3>
+            <!-- {% if page.onSale %}
                         <h5 class="text-muted">{{ page.str.price.tagline }}</h5>
-                    {% endif %}
-                </div>
-                <div class="pricing">
-                    <div class="d-flex flex-wrap justify-content-center text-center">
-                        <div class="type-item">
-                            <div class="card-head">
-                                <div><img src="/public/images/undraw_finish_line.png" height="120"/></div>
-                                <small>{{ page.str.price.category }}</small>
-                                <h4>{{ page.str.general.superMiniMarathon }} <br> 15 {{ page.str.general.kmShort }}</h4>
-                                {% if page.onSale %}
-                                    <div class="price">350<sub>{{ page.str.price.baht }}</sub></div>
-                                {% endif %}
-                                {% if page.onSale %}<del>{% endif %}
-                                    <div class="price">400<sub>{{ page.str.price.baht }}</sub></div>
-                                {% if page.onSale %}</del>{% endif %}
-                            
-                            </div>
-                            <h5>{{ page.str.price.subTitle }}</h5>
-                            <div class="list-group-item">{{ page.str.price.medal }}</div>
-                            <div class="list-group-item">{{ page.str.price.shirt }}</div>
-                            <div class="list-group-item"><del>{{ page.str.price.receipt }}*</del></div>
+                    {% endif %} -->
+            <h5 class="text-muted">ประเภทการสมัคร</h5>
+        </div>
+        <div class="pricing">
+            <div class="d-flex flex-wrap justify-content-center text-center">
+                <div class="type-item">
+                    <div class="card-head">
+                        <div><img src="/public/images/undraw_superhero.png" height="120" /></div>
+                        <small>{{ page.str.price.category }}</small>
+                        <h4>วิ่ง VIP<br><small
+                                style="font-size: 1rem">{{ page.str.price.vipDesp }}</small>&nbsp;<br>&nbsp;</h4>
 
-                        </div>
-                        <div class="type-item">
-                            <div class="card-head">
-                                <div><img src="/public/images/undraw_Jogging.png" height="120"/></div>
-                                <small>{{ page.str.price.category }}</small>
-                                <h4>{{ page.str.general.funRun }}  4 {{ page.str.general.kmShort }}<br>&nbsp;<br>&nbsp;</h4>
-                                {% if page.onSale %}
-                                    <div class="price">250<sub>{{ page.str.price.baht }}</sub></div>
-                                {% endif %}
-                                {% if page.onSale %}<del>{% endif %}
-                                    <div class="price">300<sub>{{ page.str.price.baht }}</sub></div>
-                                {% if page.onSale %}</del>{% endif %}
-                            </div>
-                            <h5>{{ page.str.price.subTitle }}</h5>
-                            <div class="list-group-item">{{ page.str.price.medal }}</div>
-                            <div class="list-group-item">{{ page.str.price.shirt }}</div>
-                            <div class="list-group-item"><del>{{ page.str.price.receipt }}*</del></div>
-
-                        </div>
-                        <div class="type-item">
-                            <div class="card-head">
-                                <div><img src="/public/images/undraw_superhero.png" height="120"/></div>
-                                <small>{{ page.str.price.category }}</small>
-                                <h4>วิ่ง VIP<br>&nbsp;<br>&nbsp;</h4>
-                                <span class="price">1,500<sub>{{ page.str.price.baht }}</sub></span>
-                                {% if page.onSale %}<span class="price" style="font-size: 1rem;">&nbsp;</span>{% endif %}
-                            </div>
-                            <h5>{{ page.str.price.subTitle }}</h5>
-                            <div class="list-group-item">{{ page.str.price.medal }}</div>
-                            <div class="list-group-item">{{ page.str.price.shirt }}</div>
-                            <div class="list-group-item">{{ page.str.price.receipt }}*</div>
-
-                        </div>
-                        <div class="type-item">
-                            <div class="card-head">
-                                    <div><img src="/public/images/undraw_book_lover.png" height="120"/></div>
-                                <small>{{ page.str.price.category }}</small>
-                                <h4>{{ page.str.general.funRun }} 4 {{ page.str.general.kmShort }}<br/><small style="font-size: 1rem">{{ page.str.price.runRunStudent }}</small><br>&nbsp;</h4>
-                                {% if page.onSale %}
-                                    <div class="price">100<sub>{{ page.str.price.baht }}</sub></div>
-                                {% endif %}
-                                {% if page.onSale %}<del>{% endif %}
-                                    <div class="price">150<sub>{{ page.str.price.baht }}</sub></div>
-                                {% if page.onSale %}</del>{% endif %}
-                            </div>
-                            <h5>{{ page.str.price.subTitle }}</h5>
-                            <div class="list-group-item">{{ page.str.price.medal }}</div>
-                            <div class="list-group-item"><del>{{ page.str.price.shirt }}</del></div>
-                            <div class="list-group-item"><del>{{ page.str.price.receipt }}*</del></div>
-                        </div>
                     </div>
-                </div>
+                    <h5>{{ page.str.price.subTitle }}</h5>
+                    <div class="list-group-item">{{ page.str.price.bib }}</div>
+                    <div class="list-group-item">{{ page.str.price.shirt }}</div>
+                    <div class="list-group-item">{{ page.str.price.medal }}</div>
+                    <div class="list-group-item">{{ page.str.price.receipt }}**</div>
 
-                <div class="row justify-content-center">
-                    <div style="margin: 1rem;">
-                        {{ page.str.price.noteTitle }}
-                        <ol>
-                            {% for item in page.str.price.notes %}
-                                <li>{{ item }}</li>
-                            {% endfor %}
-                        </ol>
+
+                </div>
+                <div class="type-item">
+                    <div class="card-head">
+                        <div><img src="/public/images/undraw_finish_line.png" height="120" /></div>
+                        <small>{{ page.str.price.category }}</small>
+                        <h4>{{ page.str.general.superMiniMarathon }} <br> 15 {{ page.str.general.kmShort }}</h4>
                     </div>
-                </div>
+                    <h5>{{ page.str.price.subTitle }}</h5>
+                    <div class="list-group-item">{{ page.str.price.bib }}</div>
+                    <div class="list-group-item">{{ page.str.price.shirt }}</div>
+                    <div class="list-group-item">{{ page.str.price.medal }}*</div>
+                    <div class="list-group-item"><del>{{ page.str.price.receipt }}</del></div>
 
-                <div class="section light-bg">
-                    <div class="container">
-                        <div class="section-title">
-                            <h4>{{ page.str.price.conditionTitle }}</h4>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8 col-12">
-                                <ol>
-                                    {% for item in page.str.price.conditions %}
-                                        <li>{{ item }}</li>
-                                    {% endfor %}
-                                </ol>
-                                
-                            </div>
-                        </div>
+
+                </div>
+                <div class="type-item">
+                    <div class="card-head">
+                        <div><img src="/public/images/undraw_Jogging.png" height="120" /></div>
+                        <small>{{ page.str.price.category }}</small>
+                        <h4>{{ page.str.general.funRun }} 4 {{ page.str.general.kmShort }}<br>&nbsp;<br>&nbsp;</h4>
                     </div>
+                    <h5>{{ page.str.price.subTitle }}</h5>
+                    <div class="list-group-item">{{ page.str.price.bib }}</div>
+                    <div class="list-group-item">{{ page.str.price.shirt }}</div>
+                    <div class="list-group-item">{{ page.str.price.medal }}*</div>
+                    <div class="list-group-item"><del>{{ page.str.price.receipt }}</del></div>
+
+
                 </div>
 
-            <!-- // end .pricing -->
+                <div class="type-item">
+                    <div class="card-head">
+                        <div><img src="/public/images/undraw_book_lover.png" height="120" /></div>
+                        <small>{{ page.str.price.category }}</small>
+                        <h4>{{ page.str.general.funRun }} 4 {{ page.str.general.kmShort }}<br /><small
+                                style="font-size: 1rem">{{ page.str.price.runRunStudent }}</small><br>&nbsp;</h4>
+                    </div>
+                    <h5>{{ page.str.price.subTitle }}</h5>
+                    <div class="list-group-item">{{ page.str.price.bib }}</div>
+                    <div class="list-group-item"><del>{{ page.str.price.shirt }}</del></div>
+                    <div class="list-group-item">{{ page.str.price.medal }}*</div>
+                    <div class="list-group-item"><del>{{ page.str.price.receipt }}</del></div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <div class="m-3">
+                {% for item in page.str.price.noteStars %}
+                <div class="my-2">{{ item }}</div>
+                {% endfor %}
+
+            </div>
 
         </div>
 
-        <div class="section" id="confirm-payment">
-                <div class="container">
-                    <div class="section-title">
-                        <h3>{{ page.str.payment.title }}</h3>
+        <h5 class="text-center">{{ page.str.price.tagline }}</h5>
+        <div class="pricing">
+            <div class="row justify-content-center">
+                <div class="col-sm-5 col-11">
+                    <div class="card">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">ราคา (บาท)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">VIP</th>
+                                    <td>1500</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ซุปเปอร์มินิมาราธอน</th>
+                                    <td>350</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ฟันรัน</th>
+                                    <td>250</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ฟันรัน (นักศึกษา)</th>
+                                    <td>100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 col-12">
 
-                                <div class="mb-4">1. {{ page.str.payment.step1 }}</div>
-                                
-                                <div class="d-flex flex-wrap justify-content-center">
-                                    <div class="reward-item">
-                                        <img height="150" src="/public/images/undraw_wallet.png">
-                                        <h5>{{ page.str.payment.step1_1_title }}</h5>
-                                        <div>{{ page.str.payment.step1_1_description }}</div>
-                                    </div>
-                                
-                                    <div class="reward-item">
-                                        <img height="150" src="/public/images/payment.png" >
-                                        <h5>{{ page.str.payment.step1_2_title }}</h5>
-                                        <div>{{ page.str.payment.step1_2_description }}</div>
-                                    </div>
-                                </div>
-
-                                <div class="my-4">2. {{ page.str.payment.step2 }}</div>
-
-                                <div class="row my-3 justify-content-center">
-                                    <div class="col-2" ><div style="font-size: 4rem;"><i class="fas fa-link"></i></div></div>
-                                    <div class="col-sm-6 col-10 my-auto"><h5><a href="/register/web/index.php?r=site%2Fcheckstatus&language=th">{{ page.str.payment.registerStatus }}</a></h5>
-                                    <ol>
-                                        <li>{{ page.str.payment.step2_1 }} <a href="/register/web/index.php?r=site%2Fcheckstatus&language=th"><i class="fas fa-link"></i> {{ page.str.payment.registerStatus }}</a></li>
-                                        <li>{{ page.str.payment.step2_2 }}</li>
-                                    </ol>
-                                    </div>
-                                    
-                                </div>
-
-                                <div class="row my-3 justify-content-center">
-                                    <div class="col-2" ><div style="font-size: 4rem;"><i class="fab fa-line"></i></div></div>
-                                    <div class="col-sm-6 col-10 my-auto"><h5>LINE @:PAGUNMARUN</h5>
-                                    {{ page.str.payment.step2_3 }} LINE @:PAGUNMARUN</div>
-                                </div>
-                                <div class="row my-3 justify-content-center">
-                                    <div class="col-2" ><div style="font-size: 4rem;"><i class="fas fa-envelope-square"></i></div></div>
-                                    <div class="col-sm-6 col-10 my-auto"><h5> <a href="mailto:pagunmarun@gmail.com">Email: pagunmarun@gmail.com</a></h5>
-                                    {{ page.str.payment.step2_3 }} <a href="mailto:pagunmarun@gmail.com">Email: pagunmarun@gmail.com</a></div>
-                                </div>
-
-                            <div class="my-4">3. {{ page.str.payment.step3 }} <a href="/register/web/index.php?r=site%2Fcheckstatus&language=th"><i class="fas fa-link"></i> {{ page.str.payment.registerStatus }}</a></li> {{ page.str.payment.step3Rest }}</div>
-                        
-                        </div>
-                    </div>
                 </div>
-              
+            </div>
+        </div>
+
+        <h5 class="text-center mt-4">{{ page.str.price.tagline2 }}</h5>
+        <div class="pricing">
+            <div class="row justify-content-center">
+                <div class="col-sm-5 col-11">
+                    <div class="card">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">ราคา (บาท)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">VIP</th>
+                                    <td>1500</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ซุปเปอร์มินิมาราธอน</th>
+                                    <td>400</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ฟันรัน</th>
+                                    <td>300</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ฟันรัน (นักศึกษา)</th>
+                                    <td>150</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="m-3">
+                {{ page.str.price.noteTitle }}
+                <ol>
+                    {% for item in page.str.price.notes %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ol>
             </div>
 
-        <div class="section bg-color" id="contact">
-            <div class="container">
+        </div>
 
-                <div class="section-title">
-                    <h3 class="contact-text-color">{{ page.str.contact.title }}</h3>
+        <h3 class="text-center mt-4">ระยะทาง / เวลาปล่อยตัว / เวลาจำกัด</h3>
+        <div class="pricing">
+            <div class="row justify-content-center">
+                <div class="col-sm-5 col-11">
+                    <div class="card">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">เวลาปล่อยตัว</th>
+                                    <th scope="col">เวลาจำกัด</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <th scope="row">ซุปเปอร์มินิมาราธอน 15 กม.</th>
+                                    <td>05.00</td>
+                                    <td>3 ชม.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ฟันรัน 4 กม.</th>
+                                    <td>05.30</td>
+                                    <td>2 ชม.</td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+
+                    </div>
+
                 </div>
-                <div class="row justify-content-md-center">
-                    <div class="col-md-6 ">
-                        <div class="contact-list">
-                            <span class="ti-location-pin mr-2"></span><span class="contact-text-color"></span>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="section light-bg">
+        <div class="container">
+
+            <div class="section-title">
+                <h3>{{ page.str.price.PaymentTitle }}</h3>
+            </div>
+            <div class="mb-4 text-center">{{ page.str.payment.step1 }}</div>
+
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="reward-item">
+                    <img height="150" src="/public/images/undraw_wallet.png">
+                    <h5>{{ page.str.payment.step1_1_title }}</h5>
+                    <div>{{ page.str.payment.step1_1_description }}</div>
+                </div>
+
+                <div class="reward-item">
+                    <img height="150" src="/public/images/payment.png">
+                    <h5>{{ page.str.payment.step1_2_title }}</h5>
+                    <div>{{ page.str.payment.step1_2_description }}</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="section" id="confirm-payment">
+        <div class="container">
+            <div class="section-title">
+                <h3>{{ page.str.payment.title }}</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-12">
+                    <div class="my-4">1. {{ page.str.payment.step2 }}</div>
+
+                    <div class="row my-3 justify-content-center">
+                        <div class="col-2">
+                            <div style="font-size: 4rem;"><i class="fas fa-link"></i></div>
                         </div>
-                        <div class="contact-list">
-                            <i class="fas fa-envelope-square"></i>&nbsp;<a class="contact-text-color"
-                                href="mailto:pagunmarun@gmail.com">pagunmarun@gmail.com</a>
+                        <div class="col-sm-6 col-10 my-auto">
+                            <h5><a
+                                    href="/register/web/index.php?r=site%2Fcheckstatus&language=th">{{ page.str.payment.registerStatus }}</a>
+                            </h5>
+                            <ol>
+                                <li>{{ page.str.payment.step2_1 }} <a
+                                        href="/register/web/index.php?r=site%2Fcheckstatus&language=th"><i
+                                            class="fas fa-link"></i> {{ page.str.payment.registerStatus }}</a></li>
+                                <li>{{ page.str.payment.step2_2 }}</li>
+                            </ol>
                         </div>
-                        <div class="contact-list">
-                            <i class="fab fa-line"></i>&nbsp;<a class="contact-text-color" href="#">line@:
-                                PAGUNMARUN</a>
+
+                    </div>
+
+                    <div class="row my-3 justify-content-center">
+                        <div class="col-2">
+                            <div style="font-size: 4rem;"><i class="fab fa-line"></i></div>
                         </div>
-                        <div class="contact-list">
-                            <div>
-                                <i class="fas fa-phone"></i>&nbsp;<a class="contact-text-color"
+                        <div class="col-sm-6 col-10 my-auto">
+                            <h5>LINE @:PAGUNMARUN</h5>
+                            {{ page.str.payment.step2_3 }} LINE @:PAGUNMARUN
+                        </div>
+                    </div>
+                    <div class="row my-3 justify-content-center">
+                        <div class="col-2">
+                            <div style="font-size: 4rem;"><i class="fas fa-envelope-square"></i></div>
+                        </div>
+                        <div class="col-sm-6 col-10 my-auto">
+                            <h5> <a href="mailto:pagunmarun@gmail.com">Email: pagunmarun@gmail.com</a></h5>
+                            {{ page.str.payment.step2_3 }} <a href="mailto:pagunmarun@gmail.com">Email:
+                                pagunmarun@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="my-4">2. {{ page.str.payment.step3 }} <a
+                            href="/register/web/index.php?r=site%2Fcheckstatus&language=th"><i class="fas fa-link"></i>
+                            {{ page.str.payment.registerStatus }}</a></li> {{ page.str.payment.step3Rest }}</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-color" id="contact">
+        <div class="container">
+
+            <div class="section-title">
+                <h3 class="contact-text-color">{{ page.str.contact.title }}</h3>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-6 ">
+                    <div class="contact-list">
+                        <span class="ti-location-pin mr-2"></span><span class="contact-text-color"></span>
+                    </div>
+                    <div class="contact-list">
+                        <i class="fas fa-envelope-square"></i>&nbsp;<a class="contact-text-color"
+                            href="mailto:pagunmarun@gmail.com">pagunmarun@gmail.com</a>
+                    </div>
+                    <div class="contact-list">
+                        <i class="fab fa-line"></i>&nbsp;<a class="contact-text-color" href="#">line@:
+                            PAGUNMARUN</a>
+                    </div>
+                    <div class="contact-list">
+                        <div>
+                            <i class="fas fa-phone"></i>&nbsp;<a class="contact-text-color"
                                 href="tel:074289119">074-289119</a>
-                            </div>
-                                <i class="fas fa-phone"></i>&nbsp;<a class="contact-text-color"
-                                href="tel:074289129">074-289129</a>
                         </div>
+                        <i class="fas fa-phone"></i>&nbsp;<a class="contact-text-color"
+                            href="tel:074289129">074-289129</a>
                     </div>
                 </div>
             </div>
-
-
         </div>
-        <!-- // end .section -->
+
+
+    </div>
+    <!-- // end .section -->
 
 
     </div>
@@ -663,7 +784,7 @@ URI     : https://colorlib.com
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
     <!-- Cycle2 -->
-    
+
     <!-- include Cycle2 -->
     <script src="/public/js/jquery.cycle2.min.js"></script>
 
@@ -672,7 +793,7 @@ URI     : https://colorlib.com
 
     <!--  Google Analytics Script-->
     {% if jekyll.environment == "production" %}
-        {% include google_analytics.html %}
+    {% include google_analytics.html %}
     {% endif %}
 
     <script type="text/javascript">
