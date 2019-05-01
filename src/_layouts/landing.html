@@ -257,7 +257,7 @@ URI     : https://colorlib.com
                 
                 <!-- // end .pricing -->
             </div>
-            <div class="text-center mt-3">*หมายเหตุ: หากมีกรณีจำเป็นที่จะต้องเปลี่ยนแปลงเส้นทางจะแจ้งให้ทราบล่วงหน้า</div>
+            <div class="text-center mt-3">{{ page.str.map.remark }}</div>
 
         </div>
     </div>
@@ -366,7 +366,7 @@ URI     : https://colorlib.com
                         <div class="card pricing">
                             <div class="card-head">
                                 <img src="/public/images/group-run.png" height="150">
-                                <h4>ฟันรัน (พากันมารัน)<div><sub>4 {{ page.str.general.kmShort }} </sub></div>
+                                <h4>{{ page.str.general.groupRun }}<div><sub>4 {{ page.str.general.kmShort }} </sub></div>
                                 </h4>
                             </div>
 
@@ -446,7 +446,7 @@ URI     : https://colorlib.com
             <!-- {% if page.onSale %}
                         <h5 class="text-muted">{{ page.str.price.tagline }}</h5>
                     {% endif %} -->
-            <h5 class="text-muted">ประเภทการสมัคร</h5>
+            <h5 class="text-muted">{{ page.str.price.tagline }}</h5>
         </div>
         <div class="pricing">
             <div class="d-flex flex-wrap justify-content-center text-center">
@@ -523,7 +523,7 @@ URI     : https://colorlib.com
 
         </div>
 
-        <h5 class="text-center">{{ page.str.price.tagline }}</h5>
+        <h5 class="text-center">{{ page.str.price.specialRateTitle }}</h5>
         <div class="pricing">
             <div class="row justify-content-center">
                 <div class="col-sm-5 col-11">
@@ -532,7 +532,7 @@ URI     : https://colorlib.com
                             <thead>
                                 <tr>
                                     <th scope="col"></th>
-                                    <th scope="col">ราคา (บาท)</th>
+                                    <th scope="col">{{ page.str.general.price }} ({{ page.str.general.baht }})</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -541,15 +541,15 @@ URI     : https://colorlib.com
                                     <td>1500</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">ซุปเปอร์มินิมาราธอน</th>
+                                    <th scope="row">{{ page.str.general.superMiniMarathon }}</th>
                                     <td>350</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">ฟันรัน</th>
+                                    <th scope="row">{{ page.str.general.funRun }}</th>
                                     <td>250</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">ฟันรัน (นักศึกษา)</th>
+                                    <th scope="row">{{ page.str.general.funRunStudent }}</th>
                                     <td>100</td>
                                 </tr>
                             </tbody>
@@ -561,7 +561,7 @@ URI     : https://colorlib.com
             </div>
         </div>
 
-        <h5 class="text-center mt-4">{{ page.str.price.tagline2 }}</h5>
+        <h5 class="text-center mt-4">{{ page.str.price.rateTitle }}</h5>
         <div class="pricing">
             <div class="row justify-content-center">
                 <div class="col-sm-5 col-11">
@@ -570,7 +570,7 @@ URI     : https://colorlib.com
                             <thead>
                                 <tr>
                                     <th scope="col"></th>
-                                    <th scope="col">ราคา (บาท)</th>
+                                    <th scope="col">{{ page.str.general.price }} ({{ page.str.general.baht }})</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -579,15 +579,15 @@ URI     : https://colorlib.com
                                     <td>1500</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">ซุปเปอร์มินิมาราธอน</th>
+                                    <th scope="row">{{ page.str.general.superMiniMarathon }}</th>
                                     <td>400</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">ฟันรัน</th>
+                                    <th scope="row">{{ page.str.general.funRun }}</th>
                                     <td>300</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">ฟันรัน (นักศึกษา)</th>
+                                    <th scope="row">{{ page.str.general.funRunStudent }}</th>
                                     <td>150</td>
                                 </tr>
                             </tbody>
@@ -611,7 +611,7 @@ URI     : https://colorlib.com
 
         </div>
 
-        <h3 class="text-center mt-4">ระยะทาง / เวลาปล่อยตัว / เวลาจำกัด</h3>
+        <h3 class="text-center mt-4">{{ page.str.price.cutOffTimeTitle }}</h3>
         <div class="pricing">
             <div class="row justify-content-center">
                 <div class="col-sm-5 col-11">
@@ -620,21 +620,21 @@ URI     : https://colorlib.com
                             <thead>
                                 <tr>
                                     <th scope="col"></th>
-                                    <th scope="col">เวลาปล่อยตัว</th>
-                                    <th scope="col">เวลาจำกัด</th>
+                                    <th scope="col">{{ page.str.price.startTime }}</th>
+                                    <th scope="col">{{ page.str.price.timeLimit }}</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 
                                 <tr>
-                                    <th scope="row">ซุปเปอร์มินิมาราธอน 15 กม.</th>
+                                    <th scope="row">{{ page.str.general.superMiniMarathon }} 15 {{ page.str.general.kmShort }}</th>
                                     <td>05.00</td>
-                                    <td>3 ชม.</td>
+                                    <td>3 {{ page.str.general.hoursShort }}</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">ฟันรัน 4 กม.</th>
+                                    <th scope="row">{{ page.str.general.funRun }} 4 {{ page.str.general.kmShort }}</th>
                                     <td>05.30</td>
-                                    <td>2 ชม.</td>
+                                    <td>2 {{ page.str.general.hoursShort }}</td>
                                 </tr>
                                
                             </tbody>
