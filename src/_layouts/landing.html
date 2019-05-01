@@ -10,12 +10,12 @@ URI     : https://colorlib.com
  -->
 
 <head>
-    <title>PA GUN MA RUN - พากันมารัน</title>
+    <title>{{ page.str.meta.title }} - {{  page.str.info.tagline }}</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="{{  page.str.meta.description }}">
+    <meta name="keywords" content="{{  page.str.meta.keywords }}">
     <meta name="theme-color" content="#333">
 
     <!-- Font -->
@@ -64,6 +64,8 @@ URI     : https://colorlib.com
                                 </li>
                                 <li class="nav-item"> <a class="nav-link" href="/register/web/index.php?r=site%2Fcheckstatus&language={{ page.lang }}">{{ page.str.menu.status }}</a>
                                 </li>
+                                <li class="nav-item"> <a class="nav-link" href="/register/web/index.php?r=site%2Fcheckstatus&language={{ page.lang }}">{{ page.str.menu.notifyPayment }}</a>
+                                </li>
                                 <li class="nav-item"> <a class="nav-link"
                                         href="#contact">{{ page.str.menu.contact }}</a>
                                 </li>
@@ -109,7 +111,7 @@ URI     : https://colorlib.com
                         <img src="/public/images/big-medal.png" />
                     </div>
                     <div class="hero-tagline">
-                        <p class="tagline">{{ page.str.hero.raceDate }}</p>
+                        <p class="tagline">{{ page.str.general.raceDate }}</p>
                         <p class="tagline">
                             {{ page.str.hero.tagline }}
                         </p>
@@ -653,19 +655,19 @@ URI     : https://colorlib.com
             <div class="section-title">
                 <h3>{{ page.str.price.PaymentTitle }}</h3>
             </div>
-            <div class="mb-4 text-center">{{ page.str.payment.step1 }}</div>
+            <div class="mb-4 text-center">{{ page.str.price.step1 }}</div>
 
             <div class="d-flex flex-wrap justify-content-center">
                 <div class="reward-item">
                     <img height="150" src="/public/images/undraw_wallet.png">
-                    <h5>{{ page.str.payment.step1_1_title }}</h5>
-                    <div>{{ page.str.payment.step1_1_description }}</div>
+                    <h5>{{ page.str.price.step1_1_title }}</h5>
+                    <div>{{ page.str.price.step1_1_description }}</div>
                 </div>
 
                 <div class="reward-item">
                     <img height="150" src="/public/images/payment.png">
-                    <h5>{{ page.str.payment.step1_2_title }}</h5>
-                    <div>{{ page.str.payment.step1_2_description }}</div>
+                    <h5>{{ page.str.price.step1_2_title }}</h5>
+                    <div>{{ page.str.price.step1_2_description }}</div>
                 </div>
             </div>
         </div>
