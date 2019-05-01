@@ -879,9 +879,10 @@ ul.countdown {
 /*  CONTACT US
 ----------------------*/
 .contact-list {
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
     color: #fff;
-    font-size: 1.25em;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 .contact-text-color{
@@ -894,4 +895,11 @@ a.contact-text-color {
 a.contact-text-color:hover,
 a.contact-text-color:focus {
     color: #fff;
+}
+footer p{
+    color: #fff;
+}
+
+footer a{
+    color: #007bff;
 }
