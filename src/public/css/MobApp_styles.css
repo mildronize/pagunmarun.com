@@ -903,3 +903,7 @@ footer p{
 footer a{
     color: #007bff;
 }
+
+.fix-row-oversized{
+    margin-right: 0 !important;
+}

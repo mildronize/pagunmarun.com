@@ -513,7 +513,7 @@ URI     : https://colorlib.com
         </div>
 
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center fix-row-oversized">
             <div class="m-3">
                 {% for item in page.str.price.noteStars %}
                 <div class="my-2">{{ item }}</div>
@@ -525,7 +525,7 @@ URI     : https://colorlib.com
 
         <h5 class="text-center">{{ page.str.price.specialRateTitle }}</h5>
         <div class="pricing">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center fix-row-oversized">
                 <div class="col-sm-5 col-11">
                     <div class="card">
                         <table class="table">
@@ -563,7 +563,7 @@ URI     : https://colorlib.com
 
         <h5 class="text-center mt-4">{{ page.str.price.rateTitle }}</h5>
         <div class="pricing">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center fix-row-oversized">
                 <div class="col-sm-5 col-11">
                     <div class="card">
                         <table class="table">
@@ -599,7 +599,7 @@ URI     : https://colorlib.com
             </div>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center fix-row-oversized">
             <div class="m-3">
                 {{ page.str.price.noteTitle }}
                 <ol>
@@ -612,40 +612,7 @@ URI     : https://colorlib.com
         </div>
 
         <h3 class="text-center mt-4">{{ page.str.price.cutOffTimeTitle }}</h3>
-        <div class="pricing">
-            <div class="row justify-content-center">
-                <div class="col-sm-5 col-11">
-                    <div class="card">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col">{{ page.str.price.startTime }}</th>
-                                    <th scope="col">{{ page.str.price.timeLimit }}</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                
-                                <tr>
-                                    <th scope="row">{{ page.str.general.superMiniMarathon }} 15 {{ page.str.general.kmShort }}</th>
-                                    <td>05.00</td>
-                                    <td>3 {{ page.str.general.hoursShort }}</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">{{ page.str.general.funRun }} 4 {{ page.str.general.kmShort }}</th>
-                                    <td>05.30</td>
-                                    <td>2 {{ page.str.general.hoursShort }}</td>
-                                </tr>
-                               
-                            </tbody>
-                        </table>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
+        
 
     </div>
 
