@@ -18,11 +18,11 @@ URI     : https://colorlib.com
     <meta name="keywords" content="{{  page.str.meta.keywords }}">
     <meta name="theme-color" content="#333">
 
-    <meta property="og:url"                content="https://www.pagunmarun.com" />
-    <meta property="og:type"               content="running event website" />
-    <meta property="og:title"              content="{{ page.str.meta.title }} - {{  page.str.info.tagline }}" />
-    <meta property="og:description"        content="{{  page.str.meta.description }}" />
-    <meta property="og:image"              content="{{ site.url }}/public/images/cover.jpg" />
+    <meta property="og:url" content="https://www.pagunmarun.com" />
+    <meta property="og:type" content="running event website" />
+    <meta property="og:title" content="{{ page.str.meta.title }} - {{  page.str.info.tagline }}" />
+    <meta property="og:description" content="{{  page.str.meta.description }}" />
+    <meta property="og:image" content="{{ site.url }}/public/images/cover.jpg" />
 
     <!-- Font -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -68,14 +68,18 @@ URI     : https://colorlib.com
                                 </li>
                                 <li class="nav-item"> <a class="nav-link" href="#info">{{ page.str.menu.info }}</a>
                                 </li>
-                                <li class="nav-item"> <a class="nav-link" href="/register/web/index.php?r=site%2Fcheckstatus&language={{ page.lang }}">{{ page.str.menu.status }}</a>
+                                <li class="nav-item"> <a class="nav-link"
+                                        href="/register/web/index.php?r=site%2Fcheckstatus&language={{ page.lang }}">{{ page.str.menu.status }}</a>
                                 </li>
-                                <li class="nav-item"> <a class="nav-link" href="/register/web/index.php?r=site%2Fcheckstatus&language={{ page.lang }}">{{ page.str.menu.notifyPayment }}</a>
+                                <li class="nav-item"> <a class="nav-link"
+                                        href="/register/web/index.php?r=site/payment&language={{ page.lang }}">{{ page.str.menu.notifyPayment }}</a>
                                 </li>
                                 <li class="nav-item"> <a class="nav-link"
                                         href="#contact">{{ page.str.menu.contact }}</a>
                                 </li>
-                                <li class="nav-item mr-3"><a class="btn btn-primary"  href="/register/web/index.php?r=site%2Findexregister&language={{ page.lang }}" class="nav-link">{{
+                                <li class="nav-item mr-3"><a class="btn btn-primary"
+                                        href="/register/web/index.php?r=site%2Findexregister&language={{ page.lang }}"
+                                        class="nav-link">{{
                                     page.str.menu.register }}</a></li>
                                 <li class="nav-item">
                                     <a href="/en">
@@ -242,7 +246,7 @@ URI     : https://colorlib.com
                                 <a data-fancybox="gallery" href="/public/images/minimarathon-map.jpg">
                                     <img src="/public/images/minimarathon-map.jpg" class="img-fluid">
                                 </a>
-                                
+
                             </div>
                         </div>
                         <div class="card pricing">
@@ -256,11 +260,11 @@ URI     : https://colorlib.com
                                 </a>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
-                
-                
+
+
                 <!-- // end .pricing -->
             </div>
             <div class="text-center mt-3">{{ page.str.map.remark }}</div>
@@ -292,7 +296,7 @@ URI     : https://colorlib.com
                         <img src="/public/images/medal.png" class="img-fluid">
                     </a>
                 </div>
-                
+
                 <!-- <div class="col-sm-6 pb-3 px-2">
                     <a data-fancybox="gallery" href="/public/images/shirt-size-kid.jpg">
                         <img src="/public/images/shirt-size-kid.jpg" class="img-fluid">
@@ -376,7 +380,8 @@ URI     : https://colorlib.com
                         <div class="card pricing">
                             <div class="card-head">
                                 <img src="/public/images/group-run.png" height="150">
-                                <h4>{{ page.str.general.groupRun }}<div><sub>4 {{ page.str.general.kmShort }} </sub></div>
+                                <h4>{{ page.str.general.groupRun }}<div><sub>4 {{ page.str.general.kmShort }} </sub>
+                                    </div>
                                 </h4>
                             </div>
 
@@ -478,7 +483,8 @@ URI     : https://colorlib.com
                 </div>
                 <div class="type-item">
                     <div class="card-head">
-                        <div><img src="/public/images/undraw_finish_line.png" class="img-fluid" style="margin-top: 0.7rem;margin-bottom: 0.7rem;" /></div>
+                        <div><img src="/public/images/undraw_finish_line.png" class="img-fluid"
+                                style="margin-top: 0.7rem;margin-bottom: 0.7rem;" /></div>
                         <small>{{ page.str.price.category }}</small>
                         <h4>{{ page.str.general.superMiniMarathon }} <br> 15 {{ page.str.general.kmShort }}</h4>
                     </div>
@@ -623,38 +629,39 @@ URI     : https://colorlib.com
 
         <h3 class="text-center mt-4">{{ page.str.price.cutOffTimeTitle }}</h3>
         <div class="pricing">
-                <div class="row justify-content-center">
-                    <div class="col-sm-5 col-11">
-                        <div class="card">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col"></th>
-                                        <th scope="col">{{ page.str.price.startTime }}</th>
-                                        <th scope="col">{{ page.str.price.timeLimit }}</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    
-                                    <tr>
-                                        <th scope="row">{{ page.str.general.superMiniMarathon }} 15 {{ page.str.general.kmShort }}</th>
-                                        <td>05:00</td>
-                                        <td>3 {{ page.str.general.hoursShort }}</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">{{ page.str.general.funRun }} 4 {{ page.str.general.kmShort }}</th>
-                                        <td>05:30</td>
-                                        <td>2 {{ page.str.general.hoursShort }}</td>
-                                    </tr>
-                                   
-                                </tbody>
-                            </table>
-    
-                        </div>
-    
+            <div class="row justify-content-center">
+                <div class="col-sm-5 col-11">
+                    <div class="card">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">{{ page.str.price.startTime }}</th>
+                                    <th scope="col">{{ page.str.price.timeLimit }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <th scope="row">{{ page.str.general.superMiniMarathon }} 15
+                                        {{ page.str.general.kmShort }}</th>
+                                    <td>05:00</td>
+                                    <td>3 {{ page.str.general.hoursShort }}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">{{ page.str.general.funRun }} 4 {{ page.str.general.kmShort }}</th>
+                                    <td>05:30</td>
+                                    <td>2 {{ page.str.general.hoursShort }}</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
                     </div>
+
                 </div>
             </div>
+        </div>
 
     </div>
 
@@ -667,17 +674,19 @@ URI     : https://colorlib.com
             <div class="mb-4 text-center">{{ page.str.price.step1 }}</div>
 
             <div class="d-flex flex-wrap justify-content-center">
-                <div class="reward-item">
-                    <img height="150" src="/public/images/undraw_wallet.png">
-                    <h5>{{ page.str.price.step1_1_title }}</h5>
-                    <div>{{ page.str.price.step1_1_description }}</div>
-                </div>
 
                 <div class="reward-item">
                     <img height="150" src="/public/images/payment.png">
                     <h5>{{ page.str.price.step1_2_title }}</h5>
                     <div>{{ page.str.price.step1_2_description }}</div>
                 </div>
+                <div class="reward-item">
+                    <img height="150" src="/public/images/undraw_wallet.png">
+                    <h5>{{ page.str.price.step1_1_title }}</h5>
+                    <div>{{ page.str.price.step1_1_description }}</div>
+                </div>
+
+
             </div>
         </div>
 
@@ -700,11 +709,11 @@ URI     : https://colorlib.com
                         </div>
                         <div class="col-sm-6 col-10 my-auto">
                             <h5><a
-                                    href="/register/web/index.php?r=site%2Fcheckstatus&language=th">{{ page.str.payment.registerStatus }}</a>
+                                    href="/register/web/index.php?r=site%2Fcheckstatus&language={{ page.lang }}">{{ page.str.payment.registerStatus }}</a>
                             </h5>
                             <ol>
                                 <li>{{ page.str.payment.step2_1 }} <a
-                                        href="/register/web/index.php?r=site%2Fcheckstatus&language=th"><i
+                                        href="/register/web/index.php?r=site%2Fcheckstatus&language={{ page.lang }}"><i
                                             class="fas fa-link"></i> {{ page.str.payment.registerStatus }}</a></li>
                                 <li>{{ page.str.payment.step2_2 }}</li>
                             </ol>
@@ -735,7 +744,7 @@ URI     : https://colorlib.com
                     </div>
 
                     <div class="my-4">2. {{ page.str.payment.step3 }} <a
-                            href="/register/web/index.php?r=site%2Fcheckstatus&language=th"><i class="fas fa-link"></i>
+                            href="/register/web/index.php?r=site%2Fcheckstatus&language={{ page.lang }}"><i class="fas fa-link"></i>
                             {{ page.str.payment.registerStatus }}</a></li> {{ page.str.payment.step3Rest }}</div>
 
                 </div>
@@ -754,11 +763,11 @@ URI     : https://colorlib.com
                     <h5 class="contact-text-color">{{ page.str.contact.title }}</h5>
                     <div class="contact-list mb-4 mt-5">
                         <div>
-                            <i class="fas fa-phone"></i>&nbsp;<a class="contact-text-color"
-                                href="tel:074289119">(+66) 074-289119</a>
+                            <i class="fas fa-phone"></i>&nbsp;<a class="contact-text-color" href="tel:074289119">(+66)
+                                074-289119</a>
                         </div>
-                        <i class="fas fa-phone"></i>&nbsp;<a class="contact-text-color"
-                            href="tel:074289129">(+66) 074-289129</a>
+                        <i class="fas fa-phone"></i>&nbsp;<a class="contact-text-color" href="tel:074289129">(+66)
+                            074-289129</a>
                     </div>
 
                     <div class="contact-list">
@@ -770,15 +779,19 @@ URI     : https://colorlib.com
                             PAGUNMARUN</a>
                     </div>
                     <div class="contact-list">
-                        <i class="fab fa-facebook"></i>&nbsp;<a class="contact-text-color" href="https://www.facebook.com/pagunmarun">Page:
+                        <i class="fab fa-facebook"></i>&nbsp;<a class="contact-text-color"
+                            href="https://www.facebook.com/pagunmarun">Page:
                             พากันมารัน Pa Gun Ma Run</a>
                     </div>
-                    
-                  
+
+
                 </div>
                 <div class="col-md-4">
                     <h5 class="contact-text-color mb-5">{{ page.str.contact.socialTitle }}</h5>
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpagunmarun&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=487836291329244" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    <iframe
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpagunmarun&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=487836291329244"
+                        width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
             </div>
         </div>
@@ -795,7 +808,7 @@ URI     : https://colorlib.com
 
     </div>
     <!-- // end .section -->
-   
+
 
     <!-- jQuery and Bootstrap -->
     <script src="/public/js/MobApp/jquery-3.2.1.min.js"></script>
