@@ -82,17 +82,17 @@ URI     : https://colorlib.com
                                 <li class="nav-item"> <a class="nav-link"
                                         href="#contact">{{ page.str.menu.contact }}</a>
                                 </li>
-                                <li class="nav-item mr-3"><a class="btn btn-primary"
+                                <li class="nav-item mr-sm-3"><a class="grow btn btn-primary"
                                         href="/register/web/index.php?r=site%2Findexregister&language={{ page.lang }}"
                                         class="nav-link">{{
                                     page.str.menu.register }}</a></li>
                                 <li class="nav-item">
                                     <a href="/en">
-                                        <img class="lang-icon" height="20"
+                                        <img class="lang-icon grow" height="20"
                                             src="{{ site.static_url }}/images/us_icon.png" alt="us icon">
                                     </a>
                                     <a href="/">
-                                        <img class="lang-icon" height="20"
+                                        <img class="lang-icon grow" height="20"
                                             src="{{ site.static_url }}/images/th_icon.png" alt="th icon">
                                     </a>
                                 </li>
@@ -140,10 +140,10 @@ URI     : https://colorlib.com
         </div>
     </header>
 
-    <div class="section" data-aos="fade-down">
+    <div class="section" >
         <div class="container text-center">
 
-            <div class="row">
+            <div class="row" data-aos="fade">
 
                 <div class="col-md-6">
                     <h3>Sponsor</h3>
@@ -196,7 +196,7 @@ URI     : https://colorlib.com
                     </div>
                 </div>
 
-                <div class="d-flex flex-wrap justify-content-center" data-aos="fade-up">
+                <div class="d-flex flex-wrap justify-content-center" data-aos="fade-up" data-aos="fade-up">
                     <a href="#map" class="btn info-button info-item justify-content-center grow">
                         <div class="info-item-icon"><i class="fas fa-map-marked-alt"></i></div>
                         <div class="info-item-name">{{ page.str.info.buttonMap }}</div>
@@ -535,7 +535,7 @@ URI     : https://colorlib.com
         </div>
 
         <div class="container">
-            <div class="row justify-content-center fix-row-oversized" data-aos="fade-up">
+            <div class="row justify-content-center fix-row-oversized" data-aos="fade">
                 <div class="m-3">
                     {% for item in page.str.price.noteStars %}
                     <div class="my-2">{{ item }}</div>
@@ -546,8 +546,8 @@ URI     : https://colorlib.com
             </div>
         </div>
 
-        <h5 class="text-center" data-aos="fade-up">{{ page.str.price.specialRateTitle }}</h5>
-        <div class="pricing" data-aos="fade-up">
+        <h5 class="text-center" data-aos="fade">{{ page.str.price.specialRateTitle }}</h5>
+        <div class="pricing" data-aos="fade">
             <div class="row justify-content-center fix-row-oversized">
                 <div class="col-sm-5 col-11">
                     <div class="card">
@@ -584,8 +584,8 @@ URI     : https://colorlib.com
             </div>
         </div>
 
-        <h5 class="text-center mt-4" data-aos="fade-up">{{ page.str.price.rateTitle }}</h5>
-        <div class="pricing" data-aos="fade-up">
+        <h5 class="text-center mt-4" data-aos="fade">{{ page.str.price.rateTitle }}</h5>
+        <div class="pricing" data-aos="fade">
             <div class="row justify-content-center fix-row-oversized">
                 <div class="col-sm-5 col-11">
                     <div class="card">
@@ -623,7 +623,7 @@ URI     : https://colorlib.com
         </div>
 
         <div class="container">
-            <div class="row justify-content-center fix-row-oversized" data-aos="fade-up">
+            <div class="row justify-content-center fix-row-oversized" data-aos="fade">
                 <div class="m-3">
                     {{ page.str.price.noteTitle }}
                     <ol>
@@ -636,8 +636,8 @@ URI     : https://colorlib.com
             </div>
         </div>
 
-        <h3 class="text-center mt-4" data-aos="fade-up">{{ page.str.price.cutOffTimeTitle }}</h3>
-        <div class="pricing" data-aos="fade-up">
+        <h3 class="text-center mt-4" data-aos="fade">{{ page.str.price.cutOffTimeTitle }}</h3>
+        <div class="pricing" data-aos="fade">
             <div class="row justify-content-center fix-row-oversized">
                 <div class="col-sm-5 col-11">
                     <div class="card">
@@ -677,10 +677,10 @@ URI     : https://colorlib.com
     <div class="section light-bg">
         <div class="container">
 
-            <div class="section-title" data-aos="fade-down">
+            <div class="section-title" data-aos="fade">
                 <h3>{{ page.str.price.PaymentTitle }}</h3>
             </div>
-            <div data-aos="fade-up">
+            <div data-aos="fade">
                 <div class="mb-4 text-center">{{ page.str.price.step1 }}</div>
 
                 <div class="d-flex flex-wrap justify-content-center">
@@ -707,10 +707,10 @@ URI     : https://colorlib.com
 
     <div class="section" id="confirm-payment">
         <div class="container">
-            <div class="section-title" data-aos="fade-down">
+            <div class="section-title" data-aos="fade">
                 <h3>{{ page.str.payment.title }}</h3>
             </div>
-            <div class="row justify-content-center" data-aos="fade-up">
+            <div class="row justify-content-center" data-aos="fade">
                 <div class="col-lg-8 col-12">
                     <div class="my-4">1. {{ page.str.payment.step2 }}</div>
 
@@ -849,10 +849,11 @@ URI     : https://colorlib.com
     <script type="text/javascript">
 
         AOS.init({
-            duration: 1000,
-            delay: 200,
-            offset: 100,
-            once: true
+            duration: 800,
+            delay: 50,
+            offset: 50,
+            // once: true,
+            easing: 'ease-in-out-quad'
         })
 
         $("#countdown")
