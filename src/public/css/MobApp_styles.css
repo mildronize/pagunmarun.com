@@ -199,7 +199,7 @@ p.lead {
   background-color: #fff;
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 0 10px; /* Some padding */
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 3px; /* Rounded corners */
   font-size: 3em; /* Increase font size */
   color: black;
 }
@@ -241,7 +241,8 @@ p.lead {
     width: 200px;
 }
 a.info-button:hover{
-    color: #ccc;
+    color: #eee;
+    background-color: #0a2032;
 }
 
 @media (max-width:500px) {
@@ -896,14 +897,19 @@ a.contact-text-color:hover,
 a.contact-text-color:focus {
     color: #fff;
 }
-footer p{
+.footer-dark p{
     color: #fff;
 }
 
-footer a{
+.footer-dark a{
     color: #007bff;
 }
 
 .fix-row-oversized{
     margin-right: 0 !important;
 }
+
+/* https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
+/* Scale on Hover with Transition */
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.04); }
