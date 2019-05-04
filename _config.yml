@@ -25,14 +25,15 @@ description                     : My notes and interesting things
 keywords                        : [note, computer, programming, script, knowledge, coding, technique, collection, glossary, data, infomation, internet, web]
 url                             : https://www.pagunmarun.com
 # for dev
-# url                           : http://127.0.0.1:4000
-#baseurl                        : /en
 image_url                       : /public/images
 
 # Development
-static_url                      : /public/static.pagunmarun.com
+# static_url                      : /public/static.pagunmarun.com
+
 # Productoin
 # static_url                      : https://static.pagunmarun.com
+static_url                      : https://pagunmarun.github.io
+
 
 featured_image_url              : /public/images/featured_image/
 comment                         : true
