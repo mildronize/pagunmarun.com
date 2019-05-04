@@ -23,12 +23,12 @@ URI     : https://colorlib.com
     <meta property="og:title" content="{{ page.str.meta.title }} - {{  page.str.info.tagline }}" />
     <meta property="og:description" content="{{  page.str.meta.description }}" />
     <meta property="og:image" content="{{ site.static_url }}/images/cover.jpg" />
-    
+
     <!-- Font -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css?family=Kanit:300,400,500" rel="stylesheet">
 
-    
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/public/css/bootstrap.min.css">
@@ -61,7 +61,8 @@ URI     : https://colorlib.com
                     <nav class="navbar navbar-dark navbar-expand-lg">
                         <a class="navbar-brand"
                             href="/{% if page.lang == '' %}th{% endif %}{% if page.lang != '' %}{{ page.lang }}{% endif %}"><img
-                                class="navbar-brand-img" src="{{ site.static_url }}/images/logo.png" class="img-fluid" alt="logo"></a>
+                                class="navbar-brand-img" src="{{ site.static_url }}/images/logo.png" class="img-fluid"
+                                alt="logo"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
                             aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span> </button>
@@ -87,12 +88,12 @@ URI     : https://colorlib.com
                                     page.str.menu.register }}</a></li>
                                 <li class="nav-item">
                                     <a href="/en">
-                                        <img class="lang-icon" height="20" src="{{ site.static_url }}/images/us_icon.png"
-                                            alt="us icon">
+                                        <img class="lang-icon" height="20"
+                                            src="{{ site.static_url }}/images/us_icon.png" alt="us icon">
                                     </a>
                                     <a href="/">
-                                        <img class="lang-icon" height="20" src="{{ site.static_url }}/images/th_icon.png"
-                                            alt="th icon">
+                                        <img class="lang-icon" height="20"
+                                            src="{{ site.static_url }}/images/th_icon.png" alt="th icon">
                                     </a>
                                 </li>
 
@@ -142,7 +143,7 @@ URI     : https://colorlib.com
     <div class="section" data-aos="fade-down">
         <div class="container text-center">
 
-            <div class="row" >
+            <div class="row">
 
                 <div class="col-md-6">
                     <h3>Sponsor</h3>
@@ -178,24 +179,24 @@ URI     : https://colorlib.com
             </div>
         </div>
 
-        <div class="section light-bg" id="info" >
+        <div class="section light-bg" id="info">
 
             <div class="container text-center">
 
                 <div class="section-title" data-aos="fade-down">
                     <h3>{{ page.str.info.title }}</h3>
                 </div>
-                <div  data-aos="fade-up">
-                <h3 class="mt-1 pt-1" style="font-size: 1.85rem">{{ page.str.general.raceTitle }}</h3>
-                <h6 class="mb-3 text-body">{{ page.str.info.tagline }}</h6>
-                <div class="row justify-content-center mb-3">
-                    <div class="col-10">
-                        {{ page.str.info.description }}
+                <div data-aos="fade-up">
+                    <h3 class="mt-1 pt-1" style="font-size: 1.85rem">{{ page.str.general.raceTitle }}</h3>
+                    <h6 class="mb-3 text-body">{{ page.str.info.tagline }}</h6>
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-10">
+                            {{ page.str.info.description }}
+                        </div>
                     </div>
                 </div>
-            </div>
 
-                <div class="d-flex flex-wrap justify-content-center"  data-aos="fade-up">
+                <div class="d-flex flex-wrap justify-content-center" data-aos="fade-up">
                     <a href="#map" class="btn info-button info-item justify-content-center grow">
                         <div class="info-item-icon"><i class="fas fa-map-marked-alt"></i></div>
                         <div class="info-item-name">{{ page.str.info.buttonMap }}</div>
@@ -234,7 +235,7 @@ URI     : https://colorlib.com
 
     </div>
 
-    <div class="section" id="map" >
+    <div class="section" id="map">
         <div class="container">
             <div class="section-title" data-aos="fade-down">
                 <h3>{{ page.str.map.title }}</h3>
@@ -243,7 +244,7 @@ URI     : https://colorlib.com
             <div class="row justify-content-center" data-aos="fade-up">
                 <div class="col-12">
                     <div class="card-deck">
-                        <div class="card pricing grow" >
+                        <div class="card pricing grow">
                             <div class="card-head">
                                 <h4>{{ page.str.general.superMiniMarathon }} 15 {{ page.str.general.kmShort }}</h4>
                             </div>
@@ -313,7 +314,7 @@ URI     : https://colorlib.com
     </div>
 
 
-    <div class="section light-bg" id="age-range" >
+    <div class="section light-bg" id="age-range">
         <div class="container">
             <div class="section-title" data-aos="fade-down">
                 <h3>{{ page.str.ageRange.title }}</h3>
@@ -382,7 +383,7 @@ URI     : https://colorlib.com
 
                             <div class="card-body"></div>
                         </div>
-                        <div class="card pricing grow" >
+                        <div class="card pricing grow">
                             <div class="card-head" data-aos="fade-up">
                                 <img src="{{ site.static_url }}/images/group-run.png" height="150">
                                 <h4>{{ page.str.general.groupRun }}<div><sub>4 {{ page.str.general.kmShort }} </sub>
@@ -410,7 +411,7 @@ URI     : https://colorlib.com
                 <h3>{{ page.str.reward.title }}</h3>
             </div>
 
-            <div class="row justify-content-center" >
+            <div class="row justify-content-center">
                 <div class="col-lg-10 col-12">
                     <div class="d-flex flex-wrap justify-content-center" data-aos="fade-up">
                         <div class="reward-item card grow">
@@ -447,13 +448,13 @@ URI     : https://colorlib.com
                                 <div>{{ page.str.reward.photoService }}</div>
                             </div>
                         </div>
-                        
-                            <h5 class="text-center mt-4">{{ page.str.reward.specialRewardRuleTitle }}</h5>
-                            <ol>
-                                {% for item in page.str.reward.specialRewardRules %}
-                                <li>{{ item }}</li>
-                                {% endfor %}
-                            </ol>
+
+                        <h5 class="text-center mt-4">{{ page.str.reward.specialRewardRuleTitle }}</h5>
+                        <ol>
+                            {% for item in page.str.reward.specialRewardRules %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
+                        </ol>
                     </div>
                 </div>
             </div>
@@ -468,7 +469,7 @@ URI     : https://colorlib.com
                     {% endif %} -->
             <h5 class="text-muted">{{ page.str.price.tagline }}</h5>
         </div>
-        <div class="pricing " data-aos="fade-up" >
+        <div class="pricing " data-aos="fade-up">
             <div class="d-flex flex-wrap justify-content-center text-center">
                 <div class="type-item grow">
                     <div class="card-head" data-aos="fade-up">
@@ -533,19 +534,20 @@ URI     : https://colorlib.com
             </div>
         </div>
 
+        <div class="container">
+            <div class="row justify-content-center fix-row-oversized" data-aos="fade-up">
+                <div class="m-3">
+                    {% for item in page.str.price.noteStars %}
+                    <div class="my-2">{{ item }}</div>
+                    {% endfor %}
 
-        <div class="row justify-content-center fix-row-oversized"  data-aos="fade-up">
-            <div class="m-3">
-                {% for item in page.str.price.noteStars %}
-                <div class="my-2">{{ item }}</div>
-                {% endfor %}
+                </div>
 
             </div>
-
         </div>
 
-        <h5 class="text-center"  data-aos="fade-up">{{ page.str.price.specialRateTitle }}</h5>
-        <div class="pricing"  data-aos="fade-up">
+        <h5 class="text-center" data-aos="fade-up">{{ page.str.price.specialRateTitle }}</h5>
+        <div class="pricing" data-aos="fade-up">
             <div class="row justify-content-center fix-row-oversized">
                 <div class="col-sm-5 col-11">
                     <div class="card">
@@ -582,8 +584,8 @@ URI     : https://colorlib.com
             </div>
         </div>
 
-        <h5 class="text-center mt-4"  data-aos="fade-up">{{ page.str.price.rateTitle }}</h5>
-        <div class="pricing"  data-aos="fade-up">
+        <h5 class="text-center mt-4" data-aos="fade-up">{{ page.str.price.rateTitle }}</h5>
+        <div class="pricing" data-aos="fade-up">
             <div class="row justify-content-center fix-row-oversized">
                 <div class="col-sm-5 col-11">
                     <div class="card">
@@ -620,21 +622,23 @@ URI     : https://colorlib.com
             </div>
         </div>
 
-        <div class="row justify-content-center fix-row-oversized"  data-aos="fade-up">
-            <div class="m-3">
-                {{ page.str.price.noteTitle }}
-                <ol>
-                    {% for item in page.str.price.notes %}
-                    <li>{{ item }}</li>
-                    {% endfor %}
-                </ol>
-            </div>
+        <div class="container">
+            <div class="row justify-content-center fix-row-oversized" data-aos="fade-up">
+                <div class="m-3">
+                    {{ page.str.price.noteTitle }}
+                    <ol>
+                        {% for item in page.str.price.notes %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
+                    </ol>
+                </div>
 
+            </div>
         </div>
 
-        <h3 class="text-center mt-4"  data-aos="fade-up">{{ page.str.price.cutOffTimeTitle }}</h3>
-        <div class="pricing"  data-aos="fade-up">
-            <div class="row justify-content-center">
+        <h3 class="text-center mt-4" data-aos="fade-up">{{ page.str.price.cutOffTimeTitle }}</h3>
+        <div class="pricing" data-aos="fade-up">
+            <div class="row justify-content-center fix-row-oversized">
                 <div class="col-sm-5 col-11">
                     <div class="card">
                         <table class="table">
@@ -670,13 +674,13 @@ URI     : https://colorlib.com
 
     </div>
 
-    <div class="section light-bg" >
+    <div class="section light-bg">
         <div class="container">
 
-            <div class="section-title"  data-aos="fade-down">
+            <div class="section-title" data-aos="fade-down">
                 <h3>{{ page.str.price.PaymentTitle }}</h3>
             </div>
-            <div  data-aos="fade-up">
+            <div data-aos="fade-up">
                 <div class="mb-4 text-center">{{ page.str.price.step1 }}</div>
 
                 <div class="d-flex flex-wrap justify-content-center">
@@ -703,10 +707,10 @@ URI     : https://colorlib.com
 
     <div class="section" id="confirm-payment">
         <div class="container">
-            <div class="section-title"  data-aos="fade-down">
+            <div class="section-title" data-aos="fade-down">
                 <h3>{{ page.str.payment.title }}</h3>
             </div>
-            <div class="row justify-content-center"  data-aos="fade-up">
+            <div class="row justify-content-center" data-aos="fade-up">
                 <div class="col-lg-8 col-12">
                     <div class="my-4">1. {{ page.str.payment.step2 }}</div>
 
@@ -751,7 +755,8 @@ URI     : https://colorlib.com
                     </div>
 
                     <div class="my-4">2. {{ page.str.payment.step3 }} <a
-                            href="/register/web/index.php?r=site%2Fcheckstatus&language={{ page.lang }}"><i class="fas fa-link"></i>
+                            href="/register/web/index.php?r=site%2Fcheckstatus&language={{ page.lang }}"><i
+                                class="fas fa-link"></i>
                             {{ page.str.payment.registerStatus }}</a></li> {{ page.str.payment.step3Rest }}</div>
 
                 </div>
@@ -763,8 +768,8 @@ URI     : https://colorlib.com
         <div class="container">
 
             <div class="row justify-content-center">
-                <div class="col-md-3">
-                    <img class="d-none d-md-block" height="250" src="{{ site.static_url }}/images/logo02.png">
+                <div class="col-md-3 d-none d-lg-block ">
+                    <img class="img-fluid" src="{{ site.static_url }}/images/logo02.png" style="max-width: 250px; ">
                 </div>
                 <div class="col-md-4 mb-5">
                     <h5 class="contact-text-color">{{ page.str.contact.title }}</h5>
@@ -797,7 +802,7 @@ URI     : https://colorlib.com
                     <h5 class="contact-text-color mb-5">{{ page.str.contact.socialTitle }}</h5>
                     <iframe
                         src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpagunmarun&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=487836291329244"
-                        width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                         allowTransparency="true" allow="encrypted-media"></iframe>
                 </div>
             </div>
@@ -844,10 +849,10 @@ URI     : https://colorlib.com
     <script type="text/javascript">
 
         AOS.init({
-        duration: 1000,
-        delay: 200,
-        offset: 100,
-        once: true
+            duration: 1000,
+            delay: 200,
+            offset: 100,
+            once: true
         })
 
         $("#countdown")
