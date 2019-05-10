@@ -34,6 +34,12 @@ image_url                       : /public/images
 static_url                      : https://static.pagunmarun.com
 # static_url                      : https://pagunmarun.github.io
 
+shirts:
+  - "/images/shirts/showcase1.jpg"
+  - "/images/shirts/showcase2.jpg"
+  - "/images/shirts/showcase3.jpg"
+  - "/images/shirts/showcase4.jpg"
+  - "/images/shirts/showcase5.jpg"
 
 featured_image_url              : /public/images/featured_image/
 comment                         : true

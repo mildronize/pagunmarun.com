@@ -913,3 +913,12 @@ a.contact-text-color:focus {
 /* Scale on Hover with Transition */
 .grow { transition: all .2s ease-in-out; }
 .grow:hover { transform: scale(1.04); }
+
+.carousel-slide{
+    width: 250px;
+    margin-right:1rem;
+}
+
+.main-carousel{
+    margin-bottom: 3rem;
+}
