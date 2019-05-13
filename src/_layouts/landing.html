@@ -52,7 +52,7 @@ URI     : https://colorlib.com
 
     <!-- Nav Menu -->
 
-    <div class="nav-menu fixed-top">
+    <div class="nav-menu fixed-top is-scrolling">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -80,9 +80,9 @@ URI     : https://colorlib.com
                                 <li class="nav-item"> <a class="nav-link"
                                         href="#contact">{{ page.str.menu.contact }}</a>
                                 </li>
-                                <li class="nav-item mr-sm-3"><a class="grow btn btn-primary"
+                                <li class="nav-item "><a class="nav-link"
                                         href="/register/web/index.php?r=site%2Findexregister&language={{ page.lang }}"
-                                        class="nav-link">{{
+                                        >{{
                                     page.str.menu.register }}</a></li>
                                 <li class="nav-item">
                                     <a href="/en">
@@ -110,27 +110,33 @@ URI     : https://colorlib.com
             <source src="{{ site.static_url }}/videos/hero-cover.mp4" type="video/mp4">
         </video>
         <div class="container h-100">
-            <div class="d-flex h-100 text-center align-items-center">
+            <div class="d-flex h-100 align-items-center">
                 <div class="w-100 text-white">
                     <!-- <img class="hero-logo-img" src="{{ site.static_url }}/images/logo02.png" /> -->
-                    <div class="d-flex justify-content-center" data-aos="zoom-in">
-                        <div class="text-center cycle-slideshow" data-cycle-fx=flipHorz data-cycle-timeout=2000>
+                    <div class="d-flex mb-5 hero-mobile-center" data-aos="zoom" style="margin-left: -30px">
+                        <div class="text-center cycle-slideshow"  data-cycle-timeout=2500>
                             <img class="hero-logo-img" src="{{ site.static_url }}/images/logo02.png">
                             <img class="hero-logo-img" src="{{ site.static_url }}/images/front-shirt.png">
                             <img class="hero-logo-img" src="{{ site.static_url }}/images/back-shirt.png">
                         </div>
                     </div>
-                    <!-- <div class="hero-medal-img" data-aos="fade">
+                    <div class="hero-medal-img" data-aos="fade">
                         <img src="{{ site.static_url }}/images/big-medal.png" />
-                    </div> -->
+                    </div>
                     <div class="hero-tagline" data-aos="fade-up" data-aos-offset="0">
-                        <p class="tagline">{{ page.str.general.raceDate }}</p>
-                        <p class="tagline">
+                        <p class="tagline hero-mobile-center" style="font-size: 2rem; font-weight: 700">{{ page.str.general.raceDate }}</p>
+                        <p class="tagline hero-mobile-center">
                             {{ page.str.hero.tagline }}
                         </p>
-                        <p>
+                        <p class="hero-mobile-center">
                             MTPSU x PSUIC
+                            
                         </p>
+                        <p class="hero-mobile-center"><a class="grow btn btn-primary" style="font-size: 1.5rem"
+                            href="/register/web/index.php?r=site%2Findexregister&language={{ page.lang }}"
+                           >สมัครเลย!</a>
+                        </p>
+                       
                     </div>
 
                 </div>

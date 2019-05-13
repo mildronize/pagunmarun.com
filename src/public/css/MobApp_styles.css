@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+/* *{
+    border: 1px solid black;
+} */
 /*
 
 Style   : MobApp CSS
@@ -202,6 +204,7 @@ p.lead {
   border-radius: 3px; /* Rounded corners */
   font-size: 3em; /* Increase font size */
   color: black;
+  opacity: 0.7;
 }
 
 #go-to-top a{
@@ -386,7 +389,7 @@ a.info-button:hover{
 
 header {
     padding: 100px 0 0;
-    text-align: center;
+    /* text-align: center; */
     color: #FFF;
 }
 
@@ -449,22 +452,17 @@ header {
     font-size: 1.5em;
     font-weight: 300;
     color: #ffffff;
-    max-width: 800px;
-    margin: 0 auto;
-}
+    /* max-width: 800px;
+    margin: 0 auto; */
+    margin-bottom: 0;
+    }
 
 .img-holder {
     height: 0;
     padding-bottom: 33%;
     overflow: hidden;
 }
-  .tagline {
-    font-size: 1.5em;
-    font-weight: 300;
-    color: #ffffff;
-    max-width: 800px;
-    margin: 0 auto;
-}
+  
 
 .img-holder {
     height: 0;
@@ -475,7 +473,7 @@ header {
 /*  logo animation */
 
 .hero-logo-img{
-    height: 45vh;
+    /* height: 30vh; */
 }
 /* .hero-logo-img{
     background-image: url('/public/images/logo02.png');
@@ -483,15 +481,22 @@ header {
     background-repeat: no-repeat;
 } */
 
+@media (max-width:999px) {
+    .hero-mobile-center {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
 .hero-medal-img {
     display: none;
     position: absolute;
     /* top: -150%; */
-    bottom: -40%;
-    left: -10%;
+    bottom: 5%;
+    right: 10%;
 }
 
-@media (min-width:1200px) {
+@media (min-width:1000px) {
     .hero-medal-img {
         display: inline;
     }
@@ -499,6 +504,7 @@ header {
 
 .hero-tagline{
     padding-bottom: 2em;
+    text-align: left;
 }
 
 @media (max-width:1200px) {
