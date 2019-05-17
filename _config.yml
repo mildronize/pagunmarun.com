@@ -34,25 +34,30 @@ image_url                       : /public/images
 static_url                      : https://static.pagunmarun.com
 # static_url                      : https://pagunmarun.github.io   (old site)
 
+shirts_prefix_url       : /images/shirts/
 shirts:
-  - "/images/shirts/showcase1.jpg"
-  - "/images/shirts/showcase2.jpg"
-  - "/images/shirts/showcase3.jpg"
-  - "/images/shirts/showcase4.jpg"
-  - "/images/shirts/showcase6.jpg"
-  - "/images/shirts/showcase7.jpg"
-  - "/images/shirts/showcase8.jpg"
-  - "/images/shirts/showcase9.jpg"
-  - "/images/shirts/showcase10.jpg"
-  - "/images/shirts/showcase11.jpg"
-  - "/images/shirts/showcase12.jpg"
-  - "/images/shirts/showcase13.jpg"
-  - "/images/shirts/showcase14.jpg"
-  - "/images/shirts/showcase15.jpg"
-  - "/images/shirts/showcase16.jpg"
+  - "showcase1.jpg"
+  - "showcase2.jpg"
+  - "showcase3.jpg"
+  - "showcase4.jpg"
+  - "showcase6.jpg"
+  - "showcase7.jpg"
+  - "showcase8.jpg"
+  - "showcase9.jpg"
+  - "showcase10.jpg"
+  - "showcase11.jpg"
+  - "showcase12.jpg"
+  - "showcase13.jpg"
+  - "showcase14.jpg"
+  - "showcase15.jpg"
+  - "showcase16.jpg"
 
-featured_image_url              : /public/images/featured_image/
-comment                         : true
+sponspors_prefix_url       : /images/sponsors/
+sponspors:
+  - "medtech-logo-th.png"
+  - "psuic-logo-en.png"
+  - "psu-coop.jpg"
+
 
 author                          : 
   codename                      : mildronize
@@ -62,8 +67,6 @@ author                          :
   facebook                      : mildronize
   twitter                       : mildronize
   google_plus                   : mildronize
-
-icon                            : /public/images/my-profile.jpg
 
 google_analytics_id             : UA-62565035-3
 
