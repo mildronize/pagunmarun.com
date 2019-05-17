@@ -930,3 +930,11 @@ a.contact-text-color:focus {
 .main-carousel{
     margin-bottom: 3rem;
 }
+
+.age-range-card{
+    max-width:20rem;
+    margin: 0.5rem; 
+}
+.age-range-card.card-body{
+    padding: 0.5rem;
+}

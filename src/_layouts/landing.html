@@ -213,10 +213,6 @@ URI     : https://colorlib.com
                         <div class="info-item-icon"><i class="fas fa-trophy"></i></div>
                         <div class="info-item-name">{{ page.str.info.buttonReward }}</div>
                     </a>
-                    <!-- <a href="#" class="btn info-button info-item justify-content-center">
-                            <div class="info-item-icon"><i class="fas fa-exclamation-triangle"></i></div>
-                            <div class="info-item-name">กฏและกติกา</div>
-                        </a> -->
                     <a href="#medal" class="btn info-button info-item justify-content-center grow">
                         <div class="info-item-icon"><i class="fas fa-medal"></i></div>
                         <div class="info-item-name">{{ page.str.info.buttonMedal }}</div>
@@ -327,44 +323,55 @@ URI     : https://colorlib.com
     </div>
 
     <div class="section light-bg" id="age-range">
-        <div class="container">
+        <div class="">
             <div class="section-title" data-aos="fade-down">
                 <h3>{{ page.str.ageRange.title }}</h3>
             </div>
+
+            <h3 style="text-align:center">วิ่งเดี่ยว</h3>
+
             <div class="row justify-content-center text-center" data-aos="fade-up">
                 <div class="col-12">
-                    <div class="card-deck">
-                        <div class="card pricing grow">
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="card age-range-card d-none d-lg-block">
+                            <img class="card-img-top" src="{{ site.static_url }}/images/single-race.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">วิ่งเดี่ยว</h5>
+                                <p class="card-text"></p>
+                                <a href="/register/web/index.php?r=site%2Findexregister&language={{ page.lang }}" class="btn btn-primary">สมัครเลย</a>
+                            </div>
+                        </div>
+                        <div class="card pricing grow age-range-card" >
                             <div class="card-head" data-aos="fade-up">
                                 <img src="{{ site.static_url }}/images/undraw_finish_line.png" height="150">
                                 <h4>{{ page.str.general.superMiniMarathon }} <div><sub>15
                                             {{ page.str.general.kmShort }}</sub></div>
                                 </h4>
                             </div>
-
-                            <div class="row" data-aos="fade-up">
-                                <div class="col">
-                                    <h5>{{ page.str.ageRange.categoryMale }} </h5>
-                                    <ul class="list-group list-group-flush">
-                                        {% for item in page.str.ageRange.superMiniMarathon.male %}
-                                        <div class="list-group-item">{{ item }}</div>
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-                                <div class="col">
-                                    <h5>{{ page.str.ageRange.categoryFemale }}</h5>
-                                    <ul class="list-group list-group-flush">
-                                        {% for item in page.str.ageRange.superMiniMarathon.female %}
-                                        <div class="list-group-item">{{ item }}</div>
-                                        {% endfor %}
-                                    </ul>
-                                </div>
-                            </div>
                             <div class="card-body">
 
-                            </div>
+                                <div class="row" data-aos="fade-up">
+                                    <div class="col">
+                                        <h5>{{ page.str.ageRange.categoryMale }} </h5>
+                                        <ul class="list-group list-group-flush">
+                                            {% for item in page.str.ageRange.superMiniMarathon.male %}
+                                            <div class="list-group-item">{{ item }}</div>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h5>{{ page.str.ageRange.categoryFemale }}</h5>
+                                        <ul class="list-group list-group-flush">
+                                            {% for item in page.str.ageRange.superMiniMarathon.female %}
+                                            <div class="list-group-item">{{ item }}</div>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            
                         </div>
-                        <div class="card pricing grow">
+                        </div>
+                        <div class="card pricing grow age-range-card">
                             <div class="card-head" data-aos="fade-up">
                                 <img src="{{ site.static_url }}/images/undraw_Jogging.png" height="150">
                                 <h4>{{ page.str.general.funRun }} <div><sub>4 {{ page.str.general.kmShort }} </sub>
@@ -372,7 +379,7 @@ URI     : https://colorlib.com
                                 </h4>
                             </div>
 
-
+                            <div class="card-body">
                             <div class="row" data-aos="fade-up">
                                 <div class="col">
                                     <h5>{{ page.str.ageRange.categoryMale }}</h5>
@@ -393,25 +400,58 @@ URI     : https://colorlib.com
                             </div>
 
 
-                            <div class="card-body"></div>
                         </div>
-                        <div class="card pricing grow">
-                            <div class="card-head" data-aos="fade-up">
-                                <img src="{{ site.static_url }}/images/group-run.png" height="150">
-                                <h4>{{ page.str.general.groupRun }}<div><sub>4 {{ page.str.general.kmShort }} </sub>
-                                    </div>
-                                </h4>
-                            </div>
-
-                            <div class="mt-3 text-body" data-aos="fade-up">{{ page.str.ageRange.groupRun }}</div>
-
-                            <div class="card-body"></div>
                         </div>
                     </div>
                 </div>
                 <!-- // end .pricing -->
 
             </div>
+
+            <h3 style="text-align:center">{{ page.str.general.raceTitle }} (วิ่งกลุ่ม)</h3>
+
+            <div class="row justify-content-center text-center" data-aos="fade-up">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="card age-range-card d-none d-lg-block">
+                                <img class="card-img-top" src="{{ site.static_url }}/images/group-run-action.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ page.str.general.raceTitle }}</h5>
+                                    <p class="card-text">ชวนกันมาวิ่งเป็นกลุ่ม โดยมีเงื่อนไขคือ ผู้เข้าแข่งขันจะต้องเข้าเส้นชัยพร้อมกันทุกคน</p>
+                                    <a href="/register/web/index.php?r=site%2Findexregister&language={{ page.lang }}" class="btn btn-primary">สมัครเลย</a>
+                                </div>
+                            </div>
+                        <div class="card pricing grow age-range-card ">
+                                <div class="card-head" data-aos="fade-up">
+                                    <img src="{{ site.static_url }}/images/group-run.png" height="150">
+                                    <h4>{{ page.str.general.superMiniMarathon }} (พากันมารัน)<div><sub>15 {{ page.str.general.kmShort }} </sub>
+                                        </div>
+                                    </h4>
+                                </div>
+                                <div class="card-body">
+                                <div class="mt-3 text-body" data-aos="fade-up">{{ page.str.ageRange.groupRunSuperMini }}</div>
+    
+                               </div>
+                            </div>
+                        
+                        <div class="card pricing grow age-range-card ">
+                            <div class="card-head" data-aos="fade-up">
+                                <img src="{{ site.static_url }}/images/group-run.png" height="150">
+                                <h4>{{ page.str.general.groupRun }}<div><sub>4 {{ page.str.general.kmShort }} </sub>
+                                    </div>
+                                </h4>
+                            </div>
+                            <div class="card-body">
+                            <div class="mt-3 text-body" data-aos="fade-up">{{ page.str.ageRange.groupRunFunRun }}</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // end .pricing -->
+
+            </div>
+
 
         </div>
     </div>
