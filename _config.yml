@@ -54,9 +54,10 @@ shirts:
 
 sponspors_prefix_url       : /images/sponsors/
 sponspors:
+  - "grad-psu.png"
+  - "psu-coop.jpg"
   - "medtech-logo-th.png"
   - "psuic-logo-en.png"
-  - "psu-coop.jpg"
 
 
 author                          : 
