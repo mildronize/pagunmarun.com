@@ -54,11 +54,19 @@ shirts:
 
 sponspors_prefix_url       : /images/sponsors/
 sponspors:
+
+# Type 5
+  # - "scb.jpg"
+# Type 6
+  - "icc-hatyai.jpg"
+# Type 7
+  - "corp-sci-tech.png"
+  - "ward-medic.png"
   - "grad-psu.png"
   - "psu-coop.jpg"
-  - "medtech-logo-th.png"
-  - "psuic-logo-en.png"
-
+  - "psu-sci-tech.png"
+  - "psu-sci.png"
+  - "psu-islamic.jpg"
 
 author                          : 
   codename                      : mildronize

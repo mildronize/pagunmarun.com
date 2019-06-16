@@ -150,10 +150,19 @@ URI     : https://colorlib.com
             <div data-aos="fade">
 
                 <h4>Sponsors</h4>
+                <!-- Type 5 -->
+                <div class="d-flex flex-wrap justify-content-center sponsors"style="margin: 0 0.2rem;">
+                <img src="{{ site.static_url }}{{ site.sponspors_prefix_url }}scb.jpg" alt="sponsor logo {{ sponspor }}">
+                </div>
                 <div class="d-flex flex-wrap justify-content-center sponsors">
                     {% for sponspor in site.sponspors %}
                         <img src="{{ site.static_url }}{{ site.sponspors_prefix_url }}{{ sponspor }}" alt="sponsor logo {{ sponspor }}">
                     {% endfor %}
+                </div>
+                <h6 style="font-weight: bold;">Organizers</h6>
+                <div class="d-flex flex-wrap justify-content-center sponsors" style="margin: 0rem;">
+                    <img src="{{ site.static_url }}{{ site.sponspors_prefix_url }}medtech-logo-th.png" alt="sponsor logo {{ sponspor }}">
+                    <img src="{{ site.static_url }}{{ site.sponspors_prefix_url }}psuic-logo-en.png" alt="sponsor logo {{ sponspor }}">
                 </div>
                 
             </div>
@@ -597,7 +606,7 @@ URI     : https://colorlib.com
             </div>
         </div>
 
-        <h5 class="text-center" data-aos="fade">{{ page.str.price.specialRateTitle }}</h5>
+        <!-- <h5 class="text-center" data-aos="fade">{{ page.str.price.specialRateTitle }}</h5>
         <div class="pricing" data-aos="fade">
             <div class="row justify-content-center fix-row-oversized">
                 <div class="col-sm-5 col-11">
@@ -633,7 +642,7 @@ URI     : https://colorlib.com
 
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <h5 class="text-center mt-4" data-aos="fade">{{ page.str.price.rateTitle }}</h5>
         <div class="pricing" data-aos="fade">
