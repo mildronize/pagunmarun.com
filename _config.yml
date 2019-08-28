@@ -53,8 +53,7 @@ shirts:
   - "showcase16.jpg"
 
 sponspors_prefix_url       : /images/sponsors/
-sponspors:
-
+bigger_sponsers:
 # Type 5
   # - "scb.jpg"
 # Type 6
@@ -65,6 +64,7 @@ sponspors:
   - "ward-medic.png"
   - "ksp.jpg"
   - "nanaphun.jpg"
+sponspors:
   - "grad-psu.png"
   - "psu-coop.jpg"
   - "psu-sci-tech.png"

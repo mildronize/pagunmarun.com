@@ -150,14 +150,27 @@ URI     : https://colorlib.com
             <div data-aos="fade">
 
                 <h4>Sponsors</h4>
+                <!-- Type 3 -->
+                <div class="d-flex flex-wrap justify-content-center sponsors"style="margin: 0 0.2rem;">
+                    <img style="height: 85px" src="{{ site.static_url }}{{ site.sponspors_prefix_url }}namman_muay.jpg" alt="sponsor logo {{ sponspor }}">
+                </div>
                 <!-- Type 5 -->
                 <div class="d-flex flex-wrap justify-content-center sponsors"style="margin: 0 0.2rem;">
-                <img src="{{ site.static_url }}{{ site.sponspors_prefix_url }}scb.jpg" alt="sponsor logo {{ sponspor }}">
+                <img style="height: 75px" src="{{ site.static_url }}{{ site.sponspors_prefix_url }}scb.jpg" alt="sponsor logo {{ sponspor }}">
                 </div>
-                <div class="d-flex flex-wrap justify-content-center sponsors">
+                <div class="d-flex flex-wrap justify-content-center sponsors" >
+                    <div style="max-width: 750px">
+                    {% for sponspor in site.bigger_sponsers %}
+                        <img style="height: 75px" src="{{ site.static_url }}{{ site.sponspors_prefix_url }}{{ sponspor }}" alt="sponsor logo {{ sponspor }}">
+                    {% endfor %}
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center sponsors" >
+                    <div style="max-width: 600px">
                     {% for sponspor in site.sponspors %}
                         <img src="{{ site.static_url }}{{ site.sponspors_prefix_url }}{{ sponspor }}" alt="sponsor logo {{ sponspor }}">
                     {% endfor %}
+                </div>
                 </div>
                 <h6 style="font-weight: bold;">Organizers</h6>
                 <div class="d-flex flex-wrap justify-content-center sponsors" style="margin: 0rem;">
