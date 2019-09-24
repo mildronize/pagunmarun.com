@@ -147,65 +147,81 @@ URI     : https://colorlib.com
     <div class="section" >
         <div class="container text-center">
 
-            <div data-aos="fade">
-
-                <h4>Sponsors</h4>
-                <!-- Type 3 -->
-                <div class="d-flex flex-wrap justify-content-center sponsors"style="margin: 0 0.2rem;">
-                    <img style="height: 85px" src="{{ site.static_url }}{{ site.sponspors_prefix_url }}lactasoy.jpg" alt="sponsor logo {{ sponspor }}">
-                    <img style="height: 85px" src="{{ site.static_url }}{{ site.sponspors_prefix_url }}namman_muay.jpg" alt="sponsor logo {{ sponspor }}">
-                    <img style="height: 85px" src="{{ site.static_url }}{{ site.sponspors_prefix_url }}global-biotechnology.jpg" alt="sponsor logo {{ sponspor }}">
-                    <img style="height: 85px" src="{{ site.static_url }}{{ site.sponspors_prefix_url }}true.jpg" alt="sponsor logo {{ sponspor }}">
-                    <img style="height: 85px" src="{{ site.static_url }}{{ site.sponspors_prefix_url }}thaihealth.jpg" alt="sponsor logo {{ sponspor }}">
-                </div>
-                <!-- Type 5 -->
-                <div class="d-flex flex-wrap justify-content-center sponsors"style="margin: 0 0.2rem;">
-                <img style="height: 75px" src="{{ site.static_url }}{{ site.sponspors_prefix_url }}scb.jpg" alt="sponsor logo {{ sponspor }}">
-                </div>
-                <div class="d-flex flex-wrap justify-content-center sponsors" >
-                    <div style="max-width: 750px">
-                    {% for sponspor in site.bigger_sponsers %}
-                        <img style="height: 75px" src="{{ site.static_url }}{{ site.sponspors_prefix_url }}{{ sponspor }}" alt="sponsor logo {{ sponspor }}">
-                    {% endfor %}
+                <div class="row justify-content-center">
+                    <div class="col-sm">
+                            <div  data-aos="fade">
+                                    <h4>สถานที่รับเสื้อและเลขการแข่งขัน</h4>
+                                    <a data-fancybox="gallery" href="{{ site.static_url }}/images/map-for-taking-bib.jpg">
+                                        <img src="{{ site.static_url }}/images/map-for-taking-bib.jpg" class="img-fluid">
+                                    </a>
+                                    <div style="padding: 1em;"></div>
+                            </div>
+                            <div  data-aos="fade">
+                                    <div class="section-title">
+                                        <h3>{{ page.str.countdown.title }}</h3>
+                                        <ul class="countdown row justify-content-center" id="countdown">
+                                            <li>
+                                                <div class="countdown-number col" id="countdown-days"></div>
+                                                {{ page.str.general.days }}
+                                            </li>
+                                            <li>
+                                                <div class="countdown-number col" id="countdown-hours"></div>
+                                                {{ page.str.general.hours }}
+                                            </li>
+                                            <li>
+                                                <div class="countdown-number col" id="countdown-minutes"></div>{{ page.str.general.minutes
+                                                }}
+                                            </li>
+                                            <li>
+                                                <div class="countdown-number col" id="countdown-seconds"></div>{{ page.str.general.seconds
+                                                }}
+                                            </li>
+                                        </ul>
+                                </div>
+                            </div>
                     </div>
-                </div>
-                <div class="d-flex flex-wrap justify-content-center sponsors" >
-                    <div style="max-width: 600px">
-                    {% for sponspor in site.sponspors %}
-                        <img src="{{ site.static_url }}{{ site.sponspors_prefix_url }}{{ sponspor }}" alt="sponsor logo {{ sponspor }}">
-                    {% endfor %}
-                </div>
+                    <div class="col-sm">
+                            <div data-aos="fade">
+
+                                <h4>Sponsors</h4>
+                                <!-- Type 3 -->
+                                <div class="d-flex flex-wrap justify-content-center sponsors-1"style="margin: 0 0.2rem;">
+                                    <img src="{{ site.static_url }}{{ site.sponspors_prefix_url }}lactasoy.jpg" alt="sponsor logo {{ sponspor }}">
+                                    <img  src="{{ site.static_url }}{{ site.sponspors_prefix_url }}namman_muay.jpg" alt="sponsor logo {{ sponspor }}">
+                                    <img  src="{{ site.static_url }}{{ site.sponspors_prefix_url }}global-biotechnology.jpg" alt="sponsor logo {{ sponspor }}">
+                                    <img  src="{{ site.static_url }}{{ site.sponspors_prefix_url }}true.jpg" alt="sponsor logo {{ sponspor }}">
+                                    <img  src="{{ site.static_url }}{{ site.sponspors_prefix_url }}thaihealth.jpg" alt="sponsor logo {{ sponspor }}">
+                                </div>
+                                <!-- Type 5 -->
+                                <div class="d-flex flex-wrap justify-content-center sponsors-2"style="margin: 0 0.2rem;">
+                                <img  src="{{ site.static_url }}{{ site.sponspors_prefix_url }}scb.jpg" alt="sponsor logo {{ sponspor }}">
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-center sponsors-2" >
+                                    <div style="max-width: 750px">
+                                    {% for sponspor in site.bigger_sponsers %}
+                                        <img src="{{ site.static_url }}{{ site.sponspors_prefix_url }}{{ sponspor }}" alt="sponsor logo {{ sponspor }}">
+                                    {% endfor %}
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-wrap justify-content-center sponsors-3" >
+                                    <div style="max-width: 600px">
+                                    {% for sponspor in site.sponspors %}
+                                        <img src="{{ site.static_url }}{{ site.sponspors_prefix_url }}{{ sponspor }}" alt="sponsor logo {{ sponspor }}">
+                                    {% endfor %}
+                                </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
                 </div>
                 <h6 style="font-weight: bold;">Organizers</h6>
-                <div class="d-flex flex-wrap justify-content-center sponsors" style="margin: 0rem;">
-                    <img src="{{ site.static_url }}{{ site.sponspors_prefix_url }}medtech-logo-th.png" alt="sponsor logo {{ sponspor }}">
-                    <img src="{{ site.static_url }}{{ site.sponspors_prefix_url }}psuic-logo-en.png" alt="sponsor logo {{ sponspor }}">
-                </div>
-                
-            </div>
-            <div  data-aos="fade">
-                    <div class="section-title">
-                        <h3>{{ page.str.countdown.title }}</h3>
-                        <ul class="countdown row justify-content-center" id="countdown">
-                            <li>
-                                <div class="countdown-number col" id="countdown-days"></div>
-                                {{ page.str.general.days }}
-                            </li>
-                            <li>
-                                <div class="countdown-number col" id="countdown-hours"></div>
-                                {{ page.str.general.hours }}
-                            </li>
-                            <li>
-                                <div class="countdown-number col" id="countdown-minutes"></div>{{ page.str.general.minutes
-                                }}
-                            </li>
-                            <li>
-                                <div class="countdown-number col" id="countdown-seconds"></div>{{ page.str.general.seconds
-                                }}
-                            </li>
-                        </ul>
-                </div>
-            </div>
+                                <div class="d-flex flex-wrap justify-content-center sponsors-3" style="margin: 0rem;">
+                                    <img src="{{ site.static_url }}{{ site.sponspors_prefix_url }}medtech-logo-th.png" alt="sponsor logo {{ sponspor }}">
+                                    <img src="{{ site.static_url }}{{ site.sponspors_prefix_url }}psuic-logo-en.png" alt="sponsor logo {{ sponspor }}">
+                                </div>
+                <div style="padding: 1em;"></div>
+                                    
         </div>
 
         <div class="section light-bg" id="info">

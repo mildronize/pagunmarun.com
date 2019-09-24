@@ -212,15 +212,35 @@ p.lead {
     text-decoration: none;
 }
 
-.sponsors img{
+.sponsors-1 img{
     margin: 0.4rem;
-    height: 50px;
-    /* padding: 0.2rem; */
-
+    height: 85px;
 }
+
+.sponsors-2 img{
+    margin: 0.4rem;
+    height: 75px;
+}
+
+.sponsors-3 img{
+    margin: 0.4rem;
+    height: 40px;
+}
+
+@media (max-width:800px) {
+    .sponsors-1 img{
+        height: 60px;
+    }
+    .sponsors-2 img{
+        height: 45px;
+    }
+    .sponsors-3 img{
+        height: 30px;
+    }
+}
+
 .sponsors{
     margin: 1rem 0;
-
 }
 
 .info-item{
