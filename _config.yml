@@ -32,6 +32,7 @@ image_url                       : /public/images
 
 # Productoin
 static_url                      : https://static.pagunmarun.com
+
 # static_url                      : https://pagunmarun.github.io   (old site)
 
 shirts_prefix_url       : /images/shirts/
@@ -65,12 +66,20 @@ bigger_sponsers:
   - "ward-medic.png"
   - "ksp.jpg"
   - "nanaphun.jpg"
+
+
 sponspors:
+  
   - "grad-psu.png"
   - "psu-coop.jpg"
-  - "psu-sci-tech.png"
   - "psu-sci.png"
-  - "psu-islamic.jpg"
+  - "CIS_PSU_TH-H.jpg"
+  - "PSU_Logo_Faculty-of-Natural_Resources_TH.jpg"
+  - "PSU_Logo_Faculty-of-Medicine_TH.jpg"
+  - "PSU_Logo_Faculty-of-Nursing_TH.jpg"
+  - "PSU_Logo_Faculty-of-Agro-Industry_TH.jpg"
+  - "PSU_Logo_Faculty-of-Engineering_TH.jpg"
+  - "PSU_Logo_Faculty-of-Veterinary_Science_TH.jpg"
 
 author                          : 
   codename                      : mildronize
