@@ -28,7 +28,7 @@ url                             : https://www.pagunmarun.com
 image_url                       : /public/images
 
 # Development
-# static_url                      : /public/static.pagunmarun.com
+# static_url                     : /public/static.pagunmarun.com
 
 # Productoin
  static_url                      : https://static.pagunmarun.com
