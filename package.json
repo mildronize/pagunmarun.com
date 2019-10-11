@@ -54,7 +54,7 @@
     "chokidar-cli": "^1.2.0",
     "concurrently": "^3.6.1",
     "cross-env": "^5.2.0",
-    "jquery": "1.11.3",
+    "jquery": "3.4.0",
     "live-server": "^1.2.1",
     "vanilla-lazyload": "8.15.0",
     "webpack": "^4.16.5",
