@@ -36,6 +36,7 @@
     "bulma": "^0.7.1",
     "cheerio": "^1.0.0-rc.2",
     "isomorphic-unfetch": "^2.1.1",
+    "jekyll": "^3.0.0-beta1",
     "moment": "^2.22.2",
     "npm": "^6.5.0",
     "react": "^16.5.1",
