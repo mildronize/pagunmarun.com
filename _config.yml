@@ -28,7 +28,7 @@ url                             : https://www.pagunmarun.com
 image_url                       : /public/images
 
 # Development
- # static_url                     : /public/static.pagunmarun.com
+# static_url                     : /public/static.pagunmarun.com
 
 # Productoin
 static_url                      : https://static.pagunmarun.com
@@ -80,7 +80,7 @@ sponspors:
   - "PSU_Logo_Faculty-of-Nursing_TH.jpg"
   - "PSU_Logo_Faculty-of-Agro-Industry_TH.jpg"
   - "PSU_Logo_Faculty-of-Engineering_TH.jpg"
-  - "PSU_Logo_Faculty-of-Dentistry.jpg"
+  - "PSU_Logo_Faculty-of-Dentistry_TH.jpg"
   - "PSU_Logo_Faculty-of-Veterinary_Science_TH.jpg"
 
 author                          : 
