@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.pagunmarun.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.pagunmarun.com/" rel="alternate" type="text/html" /><updated>2019-10-21T03:06:38+00:00</updated><id>https://www.pagunmarun.com/feed.xml</id><title type="html">Mildronize’s blog</title><subtitle>My notes and interesting things</subtitle><author><name>Thada Wangthammang</name><email>mildronize@gmail.com</email></author><entry><title type="html">How to setup this blog?</title><link href="https://www.pagunmarun.com/en/how-to-setup-this-blog/" rel="alternate" type="text/html" title="How to setup this blog?" /><published>2015-05-03T00:00:00+00:00</published><updated>2015-05-03T00:00:00+00:00</updated><id>https://www.pagunmarun.com/en/how-to-setup-this-blog</id><content type="html" xml:base="https://www.pagunmarun.com/en/how-to-setup-this-blog/">&lt;p&gt;I’m following &lt;a href=&quot;http://dev.im-bot.com/2014/06/16/how-to-set-up-this-blog/&quot;&gt;botbotbot ‘s blog&lt;/a&gt; to setup this blog. Some contents of this post is original from him.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“This blog created by Jekyll that is ruby scripts to transforms plain text into static html website and blogs and hosted on Github Page that free hosting support Jekyll.This blog use Lanyon theme that based on Poole a minimal style of Jekyll.” botbotbot said.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;All of below steps are same as &lt;a href=&quot;http://dev.im-bot.com/2014/06/16/how-to-set-up-this-blog/&quot;&gt;botbotbot ‘s blog&lt;/a&gt;, but I have used &lt;a href=&quot;http://hyde.getpoole.com/&quot;&gt;Hyde&lt;/a&gt; theme intead.&lt;/p&gt;
+
+&lt;h2 id=&quot;set-up-github-page&quot;&gt;Set up github page:&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Follow setup guilde of Github page for more information about jekyll on github look at&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; http://help.github.com/articles/using-jekyll-with-pages
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Clone project from &lt;a href=&quot;http://hyde.getpoole.com/&quot;&gt;Hyde&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; git clone https://github.com/poole/hyde.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Configs jekyll in &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;.&lt;/p&gt;
+
+    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;c1&quot;&gt;# Setup&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;            &lt;span class=&quot;s&quot;&gt;Mildronize's blog&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;tagline&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;          &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;mildronize-blog'&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;      &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;My&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;dev&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;blog'&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;              &lt;span class=&quot;s&quot;&gt;http://mildronize.github.io&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;baseurl&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;          &lt;span class=&quot;s&quot;&gt;/&lt;/span&gt;
+ &lt;span class=&quot;na&quot;&gt;paginate&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;         &lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make tags.md in root directory copy code from&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  https://github.com/LanyonM/lanyonm.github.io/blob/master/tags.html
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Let blog it.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;next-step&quot;&gt;Next Step&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://milanaryal.com/2015/adding-hover-anchor-links-to-header-on-github-pages-using-jekyll&quot;&gt;Add hover anchor links to header on GitHub Pages using Jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;note&quot;&gt;Note:&lt;/h3&gt;
+&lt;p&gt;If you got the message from jekyll build(or serve) &lt;code class=&quot;highlighter-rouge&quot;&gt;Liquid Exception: Failed to get header.&lt;/code&gt;, try to check your python version that is python 2.7.&lt;/p&gt;
+
+&lt;p&gt;See full instruction from &lt;a href=&quot;http://akenn.org/blog/Liquid-Exception-Jekyll/&quot;&gt;http://akenn.org/blog/Liquid-Exception-Jekyll/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;recommended-resources&quot;&gt;Recommended Resources&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://jmcglone.com/guides/github-pages/&quot;&gt;Creating and Hosting a Personal Site on GitHub from scratch (step by step)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;related-resources&quot;&gt;Related Resources&lt;/h3&gt;
+&lt;h4 id=&quot;git-github-and-github-pages&quot;&gt;Git, GitHub, and GitHub Pages&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://git-scm.com/doc&quot;&gt;Git Documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://try.github.io/levels/1/challenges/1&quot;&gt;Learn Git and GitHub in 15 minutes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/github-glossary&quot;&gt;GitHub Glossary&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.github.com/&quot;&gt;GitHub Help&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/tiimgreen/github-cheat-sheet&quot;&gt;GitHub Cheat Sheet&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blogs.lse.ac.uk/impactofsocialsciences/2013/06/04/github-for-academics/&quot;&gt;GitHub For Academics&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.github.com/categories/20/articles&quot;&gt;GitHub Pages Help&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jekyll/jekyll/wiki/Sites&quot;&gt;Sites Using Jekyll&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://import.jekyllrb.com/docs/home/&quot;&gt;Blog Migrations to Jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;markdown&quot;&gt;Markdown&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Official Markdown Spec&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://packetlife.net/media/library/16/Markdown.pdf&quot;&gt;Printable Markdown Cheatsheet&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;Markdown Cheatsheet&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/github-flavored-markdown&quot;&gt;GitHub Flavored Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Thada Wangthammang</name><email>mildronize@gmail.com</email></author><category term="how-to" /><category term="blog" /><category term="github-page" /><category term="jekyll" /><category term="guide" /><category term="website" /><category term="github" /><category term="markdown" /><summary type="html">I’m following botbotbot ‘s blog to setup this blog. Some contents of this post is original from him.</summary></entry></feed>
